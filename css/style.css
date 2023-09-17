@@ -16,7 +16,6 @@ body {
     ;
     grid-template-columns: 150px 3fr 0.5fr;
     grid-template-rows: 150px 1fr 150px;
-    position: relative;
 }
 
 header div a img {
@@ -63,7 +62,7 @@ header nav ul a:hover {
 main {
     background-color: lightblue;
     grid-area: info;
-    
+
 }
 
 .infoPortada {
@@ -356,8 +355,8 @@ aside h2 {
 
 }
 
-.botoncito{
-    color: black;
+.botoncito {
+    color: rgb(79, 79, 245);
     list-style-type: none;
     text-decoration: none;
 }
@@ -394,7 +393,7 @@ aside h2 {
 
 }
 
-footer{
+footer {
     width: 100%;
     bottom: 0;
     left: 0;
@@ -408,12 +407,13 @@ footer{
     background-image: url(../imagenes/fondo.jpg);
 }
 
-.logo{
+.logo {
     height: 80px;
     margin-bottom: 1rem;
 }
 
-.social-icons-container, .footer-menu-container{
+.social-icons-container,
+.footer-menu-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -421,7 +421,7 @@ footer{
     margin-bottom: 1rem;
 }
 
-.social-icon{
+.social-icon {
     height: 50px;
     width: 50px;
     border-radius: 50px;
@@ -429,47 +429,179 @@ footer{
     background-position: center;
     background-size: 40%;
     background-repeat: no-repeat;
-    margin:1rem;
+    margin: 1rem;
 }
 
-.social-icon:hover{
+.social-icon:hover {
     background-color: #121212;
     filter: invert(1);
 }
-.social-icon:nth-of-type(1){
+
+.social-icon:nth-of-type(1) {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png);
     background-size: 100%;
 }
-.social-icon:nth-of-type(2){
+
+.social-icon:nth-of-type(2) {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png);
     background-size: 100%;
 }
-.social-icon:nth-of-type(3){
+
+.social-icon:nth-of-type(3) {
     background-image: url(https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000);
     background-size: 100%;
 }
-.social-icon:nth-of-type(4){
+
+.social-icon:nth-of-type(4) {
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png);
     background-size: 100%;
 }
 
-.footer-menu-container{
+.footer-menu-container {
     list-style-type: none;
     color: black;
     font-size: 18px;
 }
 
-.menu-item{
+.menu-item {
     margin: 1rem 1.5rem;
     cursor: pointer;
     opacity: 0.6;
 }
 
-.menu-item:hover{
+.menu-item:hover {
     opacity: 1;
 }
 
-.copyright{
+.copyright {
     color: #0e0e0e;
     text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+    body {
+
+        grid-template-areas:
+            "header  header "
+            "info  info "
+            "aside aside "
+            "footer  footer"
+        ;
+        grid-template-columns: auto 3fr;
+        grid-template-rows: 150px 1fr 0.5fr 150px;
+    }
+
+    footer {
+
+        height: 55vh;
+    }
+
+    .Aside {
+
+        display: flex;
+
+    }
+
+    .volumen6 {
+
+        display: flex;
+        width: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    * {
+        font-size: 1.3rem;
+    }
+
+    h2{
+        text-align: center !important;
+        font-size: 2rem;
+
+    }
+
+    body {
+
+        grid-template-areas:
+            "header "
+            "info "
+            "aside "
+            "footer"
+        ;
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 150px auto auto 100px;
+
+
+    }
+
+    .liveAction {
+
+        width: 600px;
+        padding: 20px 0px 20px 20px;
+
+    }
+
+    .mainInfo {
+        text-align: center;
+    }
+
+    .maiNinfo {
+
+        text-align: center;
+    }
+
+    .Imagenmain {
+        width: 600px;
+        padding: 20px 20px 20px 0px;
+    }
+
+    .mundoInfo {
+
+        display: grid;
+        grid-template-areas:
+            "arcos  manga "
+            "anime  yonkou "
+            "frutas personajes "
+        ;
+        grid-template-columns: 250px 150px;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    .arcos {
+
+        grid-area: arcos;
+    }
+
+    .manga {
+
+        grid-area: manga;
+    }
+
+    .anime {
+
+        grid-area: anime;
+    }
+
+    .yonkou {
+
+        grid-area: yonkou;
+    }
+
+    .frutas {
+
+        grid-area: frutas;
+    }
+
+    .personajes {
+
+        grid-area: personajes;
+    }
+
+    footer {
+
+        height: 70vh;
+
+    }
 }
