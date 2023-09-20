@@ -42,20 +42,15 @@ header nav ul li {
     font-family: 'Caesar Dressing', cursive;
     margin: 20px;
     font-size: 20px;
-    display: inline-block;
-
 }
 
 header nav ul a:hover {
-
     text-decoration: underline;
-
 }
 
 main {
     background-color: lightblue;
     grid-area: info;
-
 }
 
 .infoPortada {
@@ -483,6 +478,12 @@ footer {
     .carrusel {
         display: none;
     }
+
+    #navMobile{
+
+        display: none;
+
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 990px) {
@@ -499,6 +500,18 @@ footer {
     }
 
     br {
+
+        display: none;
+
+    }
+
+    .logoMobile{
+
+        width: 200px;
+  
+      }
+
+    #navDesk{
 
         display: none;
 
@@ -524,11 +537,14 @@ footer {
     }
 
     .maiNinfo {
-
+        
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
+        align-items: center;
+        align-content: center;
+        text-align: center;
     }
-    
+
     .Imagenmain {
         margin-top: 20px;
     }
@@ -541,6 +557,12 @@ footer {
         display: none;
     }
 
+    .carruselImage{
+
+        width: 400px;
+
+    }
+
     footer {
 
         height: 41vh;
@@ -551,6 +573,12 @@ footer {
 
     * {
         font-size: 1.3rem;
+    }
+
+    .logoMobile{
+
+      width: 200px;
+
     }
 
 
@@ -570,6 +598,11 @@ footer {
         ;
         grid-template-columns: 0.5fr;
         grid-template-rows: 150px auto auto 70px;
+    }
+
+    #navDesk{
+        display: none;
+
     }
 
     .liveAction {
@@ -620,6 +653,12 @@ footer {
         display: none;
     }
 
+    .carruselImage{
+
+        width: 400px;
+
+    }
+
     #volumenNuevo {
         display: none;
     }
@@ -629,4 +668,5 @@ footer {
         height: 55vh;
 
     }
+    
 }
