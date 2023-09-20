@@ -18,6 +18,7 @@ body {
     grid-template-rows: 150px 1fr 150px;
 }
 
+
 header div a img {
 
     width: 300px;
@@ -42,14 +43,6 @@ header nav ul li {
     margin: 20px;
     font-size: 20px;
     display: inline-block;
-
-}
-
-header nav ul a {
-
-    color: black;
-    list-style-type: none;
-    text-decoration: none;
 
 }
 
@@ -87,7 +80,8 @@ main {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     margin: 20px;
     border-radius: 10px;
-
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .maiNinfo {
@@ -96,22 +90,21 @@ main {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     margin: 20px;
     border-radius: 10px;
-
-
+    display: flex;
+    flex-direction: row;
 }
 
 .imagenMain {
-
     text-align: left;
     margin: 20px 10px;
-
+    width: 300px;
 }
 
 .liveAction {
 
     border-radius: 10px;
     padding: 0px 0px 10px;
-
+    width: 300px;
 }
 
 .filmRed {
@@ -123,13 +116,8 @@ main {
 
     margin: 0px 10px 10px;
     border-radius: 10px;
-
-}
-
-section div img {
-
     width: 300px;
-
+    margin-top: 20px;
 }
 
 .arcos {
@@ -152,6 +140,7 @@ section div img {
     padding: 70px 30px;
     border-width: 7px;
     margin: 20px 70px;
+    grid-area: manga;
 }
 
 .manga:hover {
@@ -165,7 +154,7 @@ section div img {
     background-image: url(../imagenes/anime.jpe);
     margin: 20px 70px;
     padding: 65px 20px 0px 0px;
-
+    grid-area: anime;
 }
 
 .anime:hover {
@@ -181,6 +170,7 @@ section div img {
     padding: 100px 10px;
     margin: 20px 70px;
     padding: 65px 20px 0px 0px;
+    grid-area: yonkou;
 
 }
 
@@ -195,6 +185,7 @@ section div img {
     background-image: url(../imagenes/frutas.webp);
     padding: 65px 20px 0px;
     margin: 20px 70px;
+    grid-area: frutas;
 }
 
 .frutas:hover {
@@ -209,6 +200,7 @@ section div img {
     padding: 70px 0px;
     border-width: 7px;
     margin: 20px 70px;
+    grid-area: personajes;
 }
 
 .personajes:hover {
@@ -301,14 +293,11 @@ section div img {
 }
 
 .formulario h3 {
-
     margin: 0px 10px;
 }
 
 .formulario label {
-
     margin: 10px;
-
 }
 
 #consulta {
@@ -391,6 +380,18 @@ aside h2 {
     width: 250px;
     border-radius: 10px;
 
+}
+
+.carrusel {
+
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#carruselImagen {
+    color: #0e0e0e;
+    font-weight: bold;
 }
 
 footer {
@@ -478,7 +479,13 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 991px) {
+    .carrusel {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 990px) {
     body {
 
         grid-template-areas:
@@ -487,25 +494,56 @@ footer {
             "aside aside "
             "footer  footer"
         ;
-        grid-template-columns: auto 3fr;
-        grid-template-rows: 150px 1fr 0.5fr 150px;
+        grid-template-columns: auto auto;
+        grid-template-rows: 150px 0.5fr 0.2fr 150px;
+    }
+
+    br {
+
+        display: none;
+
+    }
+
+    .mundoInfo {
+        display: grid;
+        grid-template-areas:
+            "arcos  manga "
+            "anime  yonkou "
+            "frutas personajes "
+        ;
+        grid-template-columns: 250px 150px;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .mainInfo {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .maiNinfo {
+
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .Imagenmain {
+        margin-top: 20px;
+    }
+
+    .Aside {
+        display: none;
+    }
+
+    #volumenNuevo {
+        display: none;
     }
 
     footer {
 
-        height: 55vh;
-    }
-
-    .Aside {
-
-        display: flex;
-
-    }
-
-    .volumen6 {
-
-        display: flex;
-        width: 10px;
+        height: 41vh;
     }
 }
 
@@ -515,7 +553,8 @@ footer {
         font-size: 1.3rem;
     }
 
-    h2{
+
+    h2 {
         text-align: center !important;
         font-size: 2rem;
 
@@ -530,9 +569,7 @@ footer {
             "footer"
         ;
         grid-template-columns: 0.5fr;
-        grid-template-rows: 150px auto auto 100px;
-
-
+        grid-template-rows: 150px auto auto 70px;
     }
 
     .liveAction {
@@ -543,17 +580,27 @@ footer {
     }
 
     .mainInfo {
+        display: flex;
+        flex-direction: column-reverse;
         text-align: center;
     }
 
     .maiNinfo {
 
+        display: flex;
+        flex-direction: column-reverse;
         text-align: center;
     }
 
     .Imagenmain {
         width: 600px;
-        padding: 20px 20px 20px 0px;
+        padding: 20px 20px 0px 10px;
+    }
+
+    .imagenMain {
+        width: 600px;
+        padding: 0px 50px 0px 0px;
+        margin-right: 20px;
     }
 
     .mundoInfo {
@@ -569,39 +616,17 @@ footer {
 
     }
 
-    .arcos {
-
-        grid-area: arcos;
+    .Aside {
+        display: none;
     }
 
-    .manga {
-
-        grid-area: manga;
-    }
-
-    .anime {
-
-        grid-area: anime;
-    }
-
-    .yonkou {
-
-        grid-area: yonkou;
-    }
-
-    .frutas {
-
-        grid-area: frutas;
-    }
-
-    .personajes {
-
-        grid-area: personajes;
+    #volumenNuevo {
+        display: none;
     }
 
     footer {
 
-        height: 70vh;
+        height: 55vh;
 
     }
 }
