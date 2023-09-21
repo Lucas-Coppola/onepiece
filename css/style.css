@@ -379,20 +379,18 @@ aside h2 {
 
 .subidaDiv{
     
+    position: sticky;
     margin-right: 100px;
-    
+    bottom: 25px;
 }
 
 .imgSubida{
-    
     text-align: center;
     display: inline-block;
     height: 50px;
     width: 50px;
-    margin: -10px -20px 5px 25px;
+    margin: -230px -20px 5px 25px;
     z-index: 1;
-    position: sticky;
-    bottom: 25px;
     
 }
 
