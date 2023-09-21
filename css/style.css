@@ -377,6 +377,25 @@ aside h2 {
 
 }
 
+.subidaDiv{
+    
+    margin-right: 100px;
+    
+}
+
+.imgSubida{
+    
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: -10px -20px 5px 25px;
+    z-index: 1;
+    position: sticky;
+    bottom: 25px;
+    
+}
+
 .carrusel {
 
     display: flex;
@@ -480,6 +499,12 @@ footer {
     }
 
     #navMobile{
+
+        display: none;
+
+    }
+
+    .subidaDiv{
 
         display: none;
 
