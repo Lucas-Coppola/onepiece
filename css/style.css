@@ -568,6 +568,14 @@ footer {
     background-image: url(../imagenes/fondo.jpg);
 }
 
+.footerSininfo {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
 .logo {
     height: 80px;
     margin-bottom: 1rem;
