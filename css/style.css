@@ -133,6 +133,7 @@ header nav ul a:hover {
 
     height: 94vh;
     margin-bottom: -20px;
+    border-bottom: burlywood solid 2px;
 
 }
 
@@ -178,9 +179,10 @@ header nav ul a:hover {
 }
 
 .asideTrip {
-
-    border-left: 2rem;
-
+    border: burlywood solid 2px ;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
 }
 
 .asideLink {
@@ -206,6 +208,12 @@ header nav ul a:hover {
 #infoGrid {
 
     grid-area: info;
+
+}
+
+.tituloPrincipal{
+
+    font-size: 3rem;
 
 }
 
@@ -844,13 +852,37 @@ footer {
             " footer "
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 150px 0.1fr 0.1fr 1fr 150px;
+        grid-template-rows: 200px 0.1fr 0.1fr 1fr 150px;
+    }
+
+    .headerTrips{
+
+       margin-bottom: 20px;
+
+    }
+
+    .logoImage{
+
+        width: 350px;
+
+    }
+
+    #mobileLogotrips{
+
+        width: 12rem;
+
+    }
+
+    #navTripsmobile{
+
+        font-size: 2rem;
+
     }
 
     .portada {
 
-        height: 225vh;
-        background-size: 2000px 2450px;
+        height: 220vh;
+        background-size: 2000px 2250px;
 
     }
 
@@ -908,10 +940,15 @@ footer {
 
     #subidadivTrips {
         margin-left: 10px;
-        margin-top: -30rem;
+        margin-top: -10rem;
         bottom: -35rem;
     }
 
+    #imgsubidaTrips{
+
+        width: 100px;
+        height: 100px;
+    }
 
     .footerTrip {
 
