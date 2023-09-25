@@ -179,7 +179,7 @@ header nav ul a:hover {
 }
 
 .asideTrip {
-    border: burlywood solid 2px ;
+    border: burlywood solid 2px;
     border-right: 0px;
     border-top: 0px;
     border-bottom: 0px;
@@ -211,7 +211,7 @@ header nav ul a:hover {
 
 }
 
-.tituloPrincipal{
+.tituloPrincipal {
 
     font-size: 3rem;
 
@@ -855,25 +855,25 @@ footer {
         grid-template-rows: 200px 0.1fr 0.1fr 1fr 150px;
     }
 
-    .headerTrips{
+    .headerTrips {
 
-       margin-bottom: 20px;
+        margin-bottom: 20px;
 
     }
 
-    .logoImage{
+    .logoImage {
 
         width: 350px;
 
     }
 
-    #mobileLogotrips{
+    #mobileLogotrips {
 
         width: 12rem;
 
     }
 
-    #navTripsmobile{
+    #navTripsmobile {
 
         font-size: 2rem;
 
@@ -944,7 +944,7 @@ footer {
         bottom: -35rem;
     }
 
-    #imgsubidaTrips{
+    #imgsubidaTrips {
 
         width: 100px;
         height: 100px;
