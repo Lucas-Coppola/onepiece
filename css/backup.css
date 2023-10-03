@@ -18,6 +18,21 @@ body {
     grid-template-rows: 150px 1fr 150px;
 }
 
+.bodyTrip {
+
+    display: grid;
+    grid-template-areas:
+        " header header header "
+        " portada portada portada "
+        " main main aside "
+        " main main aside "
+        " footer footer footer "
+    ;
+    grid-template-columns: 150px 3fr 1fr;
+    grid-template-rows: 150px 0.3fr 1fr 1fr 150px;
+}
+
+
 
 header div a img {
 
@@ -51,20 +66,6 @@ header nav ul a:hover {
 .infoGrid {
     background-color: lightblue;
     grid-area: info;
-}  
-
-.bodyTrip {
-
-    display: grid;
-    grid-template-areas:
-        " header header header "
-        " portada portada portada "
-        " main main aside "
-        " main main aside "
-        " footer footer footer "
-    ;
-    grid-template-columns: 150px 3fr 1fr;
-    grid-template-rows: 150px 0.3fr 1fr 1fr 150px;
 }
 
 .infoPortada {
@@ -95,7 +96,6 @@ header nav ul a:hover {
     text-align: center;
     padding-left: 10px;
     height: 108vh;
-    border-bottom: black solid 2px;
 }
 
 .trips {
@@ -185,62 +185,6 @@ header nav ul a:hover {
     border-bottom: 0px;
 }
 
-.logoTrips {
-    height: 80px;
-    margin-bottom: 1rem;
-}
-
-.social-iconTrips {
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid #f2f2f2;
-    background-position: center;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    margin: 1rem;
-}
-
-.social-iconTrips:hover {
-    background-color: #121212;
-    filter: invert(1);
-}
-
-.social-iconTrips:nth-of-type(1) {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png);
-    background-size: 100%;
-}
-
-.social-iconTrips:nth-of-type(2) {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png);
-    background-size: 100%;
-}
-
-.social-iconTrips:nth-of-type(3) {
-    background-image: url(https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000);
-    background-size: 100%;
-}
-
-.social-iconTrips:nth-of-type(4) {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png);
-    background-size: 100%;
-}
-
-.menu-itemTrips {
-    margin: 1rem 1.5rem;
-    cursor: pointer;
-    opacity: 0.6;
-}
-
-.menu-itemTrips:hover {
-    opacity: 1;
-}
-
-.copyrightTrips {
-    color: #0e0e0e;
-    text-align: center;
-}
-
 .asideLink {
     opacity: 0.7;
     font-size: 1.5rem;
@@ -284,6 +228,7 @@ header nav ul a:hover {
 }
 
 .maiNinfo {
+
     text-align: left;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     margin: 20px;
@@ -299,16 +244,19 @@ header nav ul a:hover {
 }
 
 .liveAction {
+
     border-radius: 10px;
     padding: 0px 0px 10px;
     width: 300px;
 }
 
 .filmRed {
+
     text-align: end;
 }
 
 .Imagenmain {
+
     margin: 0px 10px 10px;
     border-radius: 10px;
     width: 300px;
@@ -316,6 +264,7 @@ header nav ul a:hover {
 }
 
 .arcos {
+
     background-image: url(../imagenes/arcos.jpg);
     padding: 70px 50px;
     border-width: 7px;
@@ -459,6 +408,54 @@ header nav ul a:hover {
 
 }
 
+.formulario {
+
+    text-align: left;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin: 20px 20px 20px;
+    border-radius: 10px;
+}
+
+#nombre {
+
+    background-color: burlywood;
+}
+
+#apellido {
+    background-color: burlywood;
+}
+
+#edad {
+    background-color: burlywood;
+
+}
+
+
+#localidad {
+    background-color: burlywood;
+}
+
+.formulario h3 {
+    margin: 0px 10px;
+}
+
+.formulario label {
+    margin: 10px;
+}
+
+#consulta {
+
+    margin: 10px 40px;
+    padding: 10px;
+    background-color: burlywood;
+}
+
+.enviar {
+    margin: 0px 10px;
+    padding: 0px;
+    border-radius: 10px;
+}
+
 aside {
 
     background-color: lightblue;
@@ -557,115 +554,6 @@ aside h2 {
     font-weight: bold;
 }
 
-/* Grand Line */
-
-.bodyGrand {
-    display: grid;
-    grid-template-areas:
-        " header header header "
-        " portada portada portada "
-        " main main main "
-        " footer footer footer "
-    ;
-    grid-template-columns: 150px 3fr 1fr;
-    grid-template-rows: 150px 0.3fr 2.5fr 150px;
-}
-
-.portadaGrand {
-
-    grid-area: portada;
-    background-image: url(../imagenes/Polos.webp);
-    background-position: center;
-    background-size: 92rem 49rem;
-    background-repeat: no-repeat;
-    font-weight: bolder;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding-left: 10px;
-    height: 108vh;
-    border-bottom: black solid 2px;
-}
-
-.grandLine {
-
-    font-size: 7rem;
-
-}
-
-.descripcionGrand {
-
-    font-size: 2rem;
-
-}
-
-.tituloBelt {
-    font-family: 'Akronim', cursive;
-    font-weight: bold;
-}
-
-#navbarGrand {
-    display: flex;
-    flex-direction: row;
-    font-weight: bold;
-    justify-content: space-between;
-}
-
-#navGrand {
-    font-family: 'Akronim', cursive;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-.grandLinevh {
-    border-bottom: burlywood solid 2px;
-}
-
-.waterSevenvh {
-    border-bottom: burlywood solid 2px;
-}
-
-.grandlineInfo {
-    display: flex;
-}
-
-.grandImages {
-    width: 40rem;
-    height: 19rem;
-}
-
-.tituloGrand {
-    font-size: 5rem;
-}
-
-.Infoline {
-    font-size: 2rem;
-}
-
-.grandImagen {
-    margin-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-
-}
-
-.imgsTripulantes {
-    display: flex;
-    flex-direction: row;
-}
-
-.trpulantesNuevos {
-    margin-left: 0px;
-    margin-right: 27px;
-    margin-bottom: 20px;
-    width: 305px;
-    height: 200px;
-}
-
-
-/* Footer Universal */
 footer {
     width: 100%;
     bottom: 0;
@@ -685,7 +573,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-
+    
 }
 
 .logo {
@@ -768,16 +656,6 @@ footer {
 
         display: none;
 
-    }
-
-    #navgrandLine {
-
-        display: none;
-
-    }
-
-    #navTrips{
-        display: none;
     }
 
     .subidaDiv {
@@ -872,26 +750,25 @@ footer {
 
 @media screen and (max-width: 480px) {
 
-    #bodyIndex{
-        font-size: 2rem;
+    * {
+        font-size: 1.3rem;
     }
 
     .logoMobile {
+
         width: 200px;
-    }
-
-    .tituloPrincipal{
-
-        font-size: 4rem;
 
     }
+
 
     h2 {
         text-align: center !important;
-        font-size: 3rem;
+        font-size: 2rem;
+
     }
 
     body {
+
         grid-template-areas:
             "header "
             "info "
@@ -904,22 +781,7 @@ footer {
 
     #navDesk {
         display: none;
-    }
 
-    #navMobile {
-        margin-bottom: 15px;
-    }
-
-    #navMobile li a{
-        font-size: 2rem;
-    }
-
-    .infoPortada{
-        margin-top: -50px;
-    }
-
-    .infoIndex{
-        margin-top: 250px;
     }
 
     .liveAction {
@@ -986,7 +848,6 @@ footer {
 
     }
 
-    /* Tripulaciones */
 
     .bodyTrip {
 
@@ -999,84 +860,80 @@ footer {
             " footer "
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 0.1fr 0.1fr 2fr 150px;
+        grid-template-rows: 200px 0.1fr 0.1fr 1fr 150px;
     }
 
     .headerTrips {
+
         margin-bottom: 20px;
+
     }
 
     .logoImage {
-        width: 700px;
+
+        width: 350px;
+
     }
 
     #mobileLogotrips {
-        width: 20rem;
+
+        width: 12rem;
+
     }
 
     #navTripsmobile {
-        font-size: 3.2rem
-    }
 
-    #navTrips {
-        margin-bottom: 50px;
-    }
+        font-size: 2rem;
 
-    #togglerTrips {
-        border: #0e0e0e solid 3px;
-        border-radius: 40px;
-    }
-
-    #togglerIcontrips {
-        width: 180px;
-        height: 190px;
     }
 
     .portada {
-        height: 400vh;
-        background-size: 150rem 233rem;
+
+        height: 220vh;
+        background-size: 2000px 2250px;
+
     }
 
     .trips {
-        font-size: 14.5rem;
-        font-weight: bold;
+        font-size: 8rem;
     }
 
     .descripcionTrips {
-        font-size: 7rem;
+        font-size: 3rem;
     }
 
     .tripulacionVh {
-        height: 200vh;
+
+        height: 184vh;
         text-align: center;
-        margin-bottom: 800px;
-        border: burlywood solid 10px;
-        border-bottom: 0px;
-        border-left: 0px;
-        border-right: 0px;
+
     }
 
     .tripulacionesInfo {
-        margin-top: 20px;
-    }
 
-    .tripName{
-        font-size: 10rem;
+        margin-top: 20px;
+
     }
 
     .mugiwara {
-        width: 70rem;
-        height: 40rem;
+
+        width: 38rem;
+        height: 20rem;
         margin-top: 10px;
+
     }
 
     .calavera {
-        width: 308px;
-        height: 308px;
+
+        width: 188px;
+        height: 188px;
+
     }
 
     .infoTripul {
-        font-size: 4.5rem;
+
+        font-size: 2.1rem;
+
     }
 
     .tripulacionesNav {
@@ -1089,167 +946,21 @@ footer {
         padding: 20px;
     }
 
-    .asideLink a{
-        font-family: 'Akronim';
-        font-size: 4rem; 
-    }
-
     #subidadivTrips {
         margin-left: 10px;
         margin-top: -10rem;
-        bottom: -1rem;
+        bottom: -35rem;
     }
 
     #imgsubidaTrips {
-        width: 200px;
-        height: 200px;
-    }
 
-    .footerTrip{
-        height: 70vh;
-    }
-
-    .logoTrips{
-        width: 500px;
-        height: 190px;
-    }
-
-    .social-iconTrips{
         width: 100px;
         height: 100px;
     }
 
-    .menu-itemTrips {
-      font-size: 4rem;
-    }
-    
-    .copyrightTrips {
-        font-size: 3rem;
-    }
-    
+    .footerTrip {
 
-    /* Grand Line */
-    .bodyGrand {
-        display: grid;
-        grid-template-areas:
-            " header "
-            " portada "
-            " main "
-            " footer "
-        ;
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px 0.8fr 2.5fr 150px;
-    }
+        height: 95vh;
 
-    #logoGrand {
-        width: 250px;
     }
-
-    #navgrandLine {
-        margin-bottom: 30px;
-    }
-
-    #togglerGrand {
-        border: #0e0e0e solid 3px;
-        border-radius: 30px;
-    }
-
-    #togglerIcongrand {
-        width: 50px;
-        height: 60px;
-    }
-
-    #mobileLogoGrand{
-        width: 200px;
-    }
-
-    #navgrandLine li a{
-        font-size: 2rem;
-    }
-
-    .portadaGrand {
-        height: unset;
-        background-size: 70rem 189rem;
-    }
-
-    .grandLine {
-        font-size: 9rem;
-    }
-
-    .descripcionGrand {
-        font-size: 2.7rem;
-    }
-
-    #navbarGrand {
-        flex-direction: column;
-    }
-
-    .tituloBelt {
-
-        font-size: 3.7rem;
-    }
-
-    #navGrand {
-        font-size: 3.5rem;
-    }
-
-    .grandlineInfo {
-        margin-top: -250px;
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    #infoInvert {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .tituloGrand {
-        font-size: 5rem;
-    }
-
-    .Infoline {
-        font-size: 2rem ;
-        text-align: center;
-    }
-
-    .grandImagen {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #calmImage {
-        margin-top: 50px;
-    }
-
-    .grandImages {
-        width: 26rem;
-        height: 15rem;
-        margin-top: 10px;
-    }
-
-    .imgsTripulantes {
-        display: flex;
-        flex-direction: row;
-        margin-top: 10px;
-        width: 200px;
-        height: 200px;
-    }
-
-    .trpulantesNuevos {
-        display: none;
-    }
-
-    #subidadivGrand {
-        margin-left: 10px;
-        margin-top: -4.5rem;
-        bottom: -5rem;
-    }
-    
-    #imgsubidaGrand {
-        width: 70px;
-        height: 70px;
-    }
-    
 }
