@@ -6,6 +6,8 @@
     list-style: none;
 }
 
+/*Grand Line Inicio*/
+
 body {
 
     display: grid;
@@ -17,22 +19,6 @@ body {
     grid-template-columns: 150px 3fr 0.5fr;
     grid-template-rows: 150px 1fr 150px;
 }
-
-.bodyTrip {
-
-    display: grid;
-    grid-template-areas:
-        " header header header "
-        " portada portada portada "
-        " main main aside "
-        " main main aside "
-        " footer footer footer "
-    ;
-    grid-template-columns: 150px 3fr 1fr;
-    grid-template-rows: 150px 0.3fr 1fr 1fr 150px;
-}
-
-
 
 header div a img {
 
@@ -68,6 +54,27 @@ header nav ul a:hover {
     grid-area: info;
 }
 
+/*Grand Line Fin Parcial*/
+
+/* Tripulaciones Inicio */
+.bodyTrip {
+
+    display: grid;
+    grid-template-areas:
+        " header header header "
+        " portada portada portada "
+        " main main aside "
+        " main main aside "
+        " footer footer footer "
+    ;
+    grid-template-columns: 150px 3fr 1fr;
+    grid-template-rows: 150px 0.3fr 1fr 1fr 150px;
+}
+
+.displayNav{
+    width: 700px;
+}
+
 .infoPortada {
 
     font-family: 'Caesar Dressing', cursive;
@@ -96,6 +103,7 @@ header nav ul a:hover {
     text-align: center;
     padding-left: 10px;
     height: 108vh;
+    border-bottom: black solid 2px;
 }
 
 .trips {
@@ -185,6 +193,65 @@ header nav ul a:hover {
     border-bottom: 0px;
 }
 
+.logoTrips {
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.social-iconTrips {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-iconTrips:hover {
+    background-color: #121212;
+    filter: invert(1);
+}
+
+.social-iconTrips:nth-of-type(1) {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png);
+    background-size: 100%;
+}
+
+.social-iconTrips:nth-of-type(2) {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png);
+    background-size: 100%;
+}
+
+.social-iconTrips:nth-of-type(3) {
+    background-image: url(https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000);
+    background-size: 100%;
+}
+
+.social-iconTrips:nth-of-type(4) {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png);
+    background-size: 100%;
+}
+
+.menu-itemTrips {
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.menu-itemTrips:hover {
+    opacity: 1;
+}
+
+.copyrightTrips {
+    color: #0e0e0e;
+    text-align: center;
+}
+
+/* Tripulaciones fin */
+
+/* Grand Line Continuacion*/
 .asideLink {
     opacity: 0.7;
     font-size: 1.5rem;
@@ -192,11 +259,8 @@ header nav ul a:hover {
 }
 
 .asideLink:hover {
-
     opacity: 1;
-    text-shadow: #f2f2f2;
 }
-
 
 .mainGrid {
 
@@ -228,7 +292,6 @@ header nav ul a:hover {
 }
 
 .maiNinfo {
-
     text-align: left;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     margin: 20px;
@@ -244,19 +307,16 @@ header nav ul a:hover {
 }
 
 .liveAction {
-
     border-radius: 10px;
     padding: 0px 0px 10px;
     width: 300px;
 }
 
 .filmRed {
-
     text-align: end;
 }
 
 .Imagenmain {
-
     margin: 0px 10px 10px;
     border-radius: 10px;
     width: 300px;
@@ -264,7 +324,6 @@ header nav ul a:hover {
 }
 
 .arcos {
-
     background-image: url(../imagenes/arcos.jpg);
     padding: 70px 50px;
     border-width: 7px;
@@ -401,59 +460,9 @@ header nav ul a:hover {
 }
 
 .mundoInfo {
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-}
-
-.formulario {
-
-    text-align: left;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    margin: 20px 20px 20px;
-    border-radius: 10px;
-}
-
-#nombre {
-
-    background-color: burlywood;
-}
-
-#apellido {
-    background-color: burlywood;
-}
-
-#edad {
-    background-color: burlywood;
-
-}
-
-
-#localidad {
-    background-color: burlywood;
-}
-
-.formulario h3 {
-    margin: 0px 10px;
-}
-
-.formulario label {
-    margin: 10px;
-}
-
-#consulta {
-
-    margin: 10px 40px;
-    padding: 10px;
-    background-color: burlywood;
-}
-
-.enviar {
-    margin: 0px 10px;
-    padding: 0px;
-    border-radius: 10px;
 }
 
 aside {
@@ -554,6 +563,115 @@ aside h2 {
     font-weight: bold;
 }
 
+/* Grand Line */
+
+.bodyGrand {
+    display: grid;
+    grid-template-areas:
+        " header header header "
+        " portada portada portada "
+        " main main main "
+        " footer footer footer "
+    ;
+    grid-template-columns: 150px 3fr 1fr;
+    grid-template-rows: 150px 0.3fr 2.5fr 150px;
+}
+
+.portadaGrand {
+
+    grid-area: portada;
+    background-image: url(../imagenes/Polos.webp);
+    background-position: center;
+    background-size: 92rem 49rem;
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-left: 10px;
+    height: 108vh;
+    border-bottom: black solid 2px;
+}
+
+.grandLine {
+
+    font-size: 7rem;
+
+}
+
+.descripcionGrand {
+
+    font-size: 2rem;
+
+}
+
+.tituloBelt {
+    font-family: 'Akronim', cursive;
+    font-weight: bold;
+}
+
+#navbarGrand {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+#navGrand {
+    font-family: 'Akronim', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.grandLinevh {
+    border-bottom: burlywood solid 2px;
+}
+
+.waterSevenvh {
+    border-bottom: burlywood solid 2px;
+}
+
+.grandlineInfo {
+    display: flex;
+}
+
+.grandImages {
+    width: 40rem;
+    height: 19rem;
+}
+
+.tituloGrand {
+    font-size: 5rem;
+}
+
+.Infoline {
+    font-size: 2rem;
+}
+
+.grandImagen {
+    margin-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+.imgsTripulantes {
+    display: flex;
+    flex-direction: row;
+}
+
+.trpulantesNuevos {
+    margin-left: 0px;
+    margin-right: 27px;
+    margin-bottom: 20px;
+    width: 305px;
+    height: 200px;
+}
+
+
+/* Footer Universal */
 footer {
     width: 100%;
     bottom: 0;
@@ -573,7 +691,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    
+
 }
 
 .logo {
@@ -647,6 +765,220 @@ footer {
     text-align: center;
 }
 
+/* Media */
+
+.bodyMedia {
+    display: grid;
+    grid-template-areas:
+        " header header header "
+        " portada portada portada "
+        " main main main "
+        " footer footer footer "
+    ;
+    grid-template-columns: 150px 1fr 3fr;
+    grid-template-rows: 150px 1fr 3.4fr 150px;
+}
+
+.portadaMedia {
+    grid-area: portada;
+    background-image: url(https://i.pinimg.com/originals/51/04/89/51048937326d0a6d8c2fc6f4910d1b2d.jpg);
+    background-position: center;
+    background-size: 1500px 774px;
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    padding-left: 10px;
+    height: 108vh;
+}
+
+.media {
+    font-size: 15rem;
+    text-align: left;
+}
+
+.descripcionMedia {
+    font-size: 2.9rem;
+    text-align: left;
+}
+
+.mainMedia {
+    background-color: lightblue;
+    grid-area: main;
+}
+
+.sectionVideos {
+    margin-bottom: 70px;
+    padding-bottom: 100px;
+    border-radius: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tituloMedia {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.videosMedia {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.videosMedia div {
+    border: burlywood solid 4px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.spotify {
+    border: burlywood solid 4px;
+    border-radius: 20px;
+}
+
+.imgsCarrusel {
+    width: 1200px;
+    height: 600px;
+    padding: 10px;
+    border: burlywood solid 4px;
+    margin-left: 40px;
+}
+
+/* Se Un Nakama */
+
+.bodyNakama {
+    display: grid;
+    grid-template-areas:
+        " header header header "
+        " main main main "
+        " footer footer footer "
+    ;
+    grid-template-columns: 150px 1fr 3fr;
+    grid-template-rows: 150px 1fr 150px;
+    background: lightblue;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.mainNakama {
+    grid-area: main;
+}
+
+.content{
+    display: flex;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2em;
+    margin-top: -60px;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+    text-align: left;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.tituloNakama {
+    text-align: left;
+    margin-left: 40px;
+    font-size: 4em;
+    margin-bottom: 30px;
+}
+
+.tituloNakama span {
+    color: burlywood;
+}
+
+.contact-form {
+    background-image: url(../imagenes/fondo.jpg);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    width: 45rem;
+}
+
+.contact-form h3{
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+    color: #0e0e0e;
+    font-size: 2rem;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    font-size: 1rem;
+    border-bottom: 1px solid white;
+}
+
+.contact-form form button {
+    background: black;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: rgb(25, 27, 27);
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-info{
+    width: 500px;
+    margin-right: 200px;
+}
+
+.imgsNakama{
+    width: 500px;
+    margin-top: 90px;
+}
+
+.imgsCalaveranakama{
+    width: 500px;
+    margin-top: 150px;
+}
+
 @media screen and (min-width: 991px) {
     .carrusel {
         display: none;
@@ -656,6 +988,20 @@ footer {
 
         display: none;
 
+    }
+
+    #navgrandLine {
+
+        display: none;
+
+    }
+
+    #navMedia {
+        display: none;
+    }
+
+    #navTrips {
+        display: none;
     }
 
     .subidaDiv {
@@ -750,25 +1096,26 @@ footer {
 
 @media screen and (max-width: 480px) {
 
-    * {
-        font-size: 1.3rem;
+    #bodyIndex {
+        font-size: 2rem;
     }
 
     .logoMobile {
-
         width: 200px;
-
     }
 
+    .tituloPrincipal {
+
+        font-size: 4rem;
+
+    }
 
     h2 {
         text-align: center !important;
-        font-size: 2rem;
-
+        font-size: 3rem;
     }
 
     body {
-
         grid-template-areas:
             "header "
             "info "
@@ -781,7 +1128,22 @@ footer {
 
     #navDesk {
         display: none;
+    }
 
+    #navMobile {
+        margin-bottom: 15px;
+    }
+
+    #navMobile li a {
+        font-size: 2rem;
+    }
+
+    .infoPortada {
+        margin-top: -50px;
+    }
+
+    .infoIndex {
+        margin-top: 250px;
     }
 
     .liveAction {
@@ -848,7 +1210,7 @@ footer {
 
     }
 
-
+    /* Tripulaciones Mobile */
     .bodyTrip {
 
         display: grid;
@@ -860,80 +1222,84 @@ footer {
             " footer "
         ;
         grid-template-columns: 1fr;
-        grid-template-rows: 200px 0.1fr 0.1fr 1fr 150px;
+        grid-template-rows: 300px 0.1fr 0.1fr 2fr 150px;
     }
 
     .headerTrips {
-
         margin-bottom: 20px;
-
     }
 
     .logoImage {
-
-        width: 350px;
-
+        width: 700px;
     }
 
     #mobileLogotrips {
-
-        width: 12rem;
-
+        width: 20rem;
     }
 
     #navTripsmobile {
+        font-size: 3.2rem
+    }
 
-        font-size: 2rem;
+    #navTrips {
+        margin-bottom: 50px;
+    }
 
+    #togglerTrips {
+        border: #0e0e0e solid 3px;
+        border-radius: 40px;
+    }
+
+    #togglerIcontrips {
+        width: 180px;
+        height: 190px;
     }
 
     .portada {
-
-        height: 220vh;
-        background-size: 2000px 2250px;
-
+        height: 400vh;
+        background-size: 150rem 233rem;
     }
 
     .trips {
-        font-size: 8rem;
+        font-size: 14.5rem;
+        font-weight: bold;
     }
 
     .descripcionTrips {
-        font-size: 3rem;
+        font-size: 7rem;
     }
 
     .tripulacionVh {
-
-        height: 184vh;
+        height: 200vh;
         text-align: center;
-
+        margin-bottom: 800px;
+        border: burlywood solid 10px;
+        border-bottom: 0px;
+        border-left: 0px;
+        border-right: 0px;
     }
 
     .tripulacionesInfo {
-
         margin-top: 20px;
+    }
 
+    .tripName {
+        font-size: 10rem;
     }
 
     .mugiwara {
-
-        width: 38rem;
-        height: 20rem;
+        width: 70rem;
+        height: 40rem;
         margin-top: 10px;
-
     }
 
     .calavera {
-
-        width: 188px;
-        height: 188px;
-
+        width: 308px;
+        height: 308px;
     }
 
     .infoTripul {
-
-        font-size: 2.1rem;
-
+        font-size: 4.5rem;
     }
 
     .tripulacionesNav {
@@ -946,21 +1312,273 @@ footer {
         padding: 20px;
     }
 
+    .asideLink a {
+        font-family: 'Akronim';
+        font-size: 4rem;
+    }
+
     #subidadivTrips {
         margin-left: 10px;
         margin-top: -10rem;
-        bottom: -35rem;
+        bottom: -1rem;
     }
 
     #imgsubidaTrips {
+        width: 200px;
+        height: 200px;
+    }
 
+    .footerTrip {
+        height: 70vh;
+    }
+
+    .logoTrips {
+        width: 500px;
+        height: 190px;
+    }
+
+    .social-iconTrips {
         width: 100px;
         height: 100px;
     }
 
-    .footerTrip {
+    .menu-itemTrips {
+        font-size: 4rem;
+    }
 
-        height: 95vh;
+    .copyrightTrips {
+        font-size: 3rem;
+    }
 
+
+    /* Grand Line Mobile */
+    .bodyGrand {
+        display: grid;
+        grid-template-areas:
+            " header "
+            " portada "
+            " main "
+            " footer "
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 0.8fr 2.5fr 150px;
+    }
+
+    #logoGrand {
+        width: 250px;
+    }
+
+    #navgrandLine {
+        margin-bottom: 30px;
+    }
+
+    #togglerGrand {
+        border: #0e0e0e solid 3px;
+        border-radius: 30px;
+    }
+
+    #togglerIcongrand {
+        width: 50px;
+        height: 60px;
+    }
+
+    #mobileLogoGrand {
+        width: 200px;
+    }
+
+    #navgrandLine li a {
+        font-size: 2rem;
+    }
+
+    .portadaGrand {
+        height: unset;
+        background-size: 70rem 189rem;
+    }
+
+    .grandLine {
+        font-size: 8.5rem;
+    }
+
+    .descripcionGrand {
+        font-size: 2.7rem;
+    }
+
+    #navbarGrand {
+        flex-direction: column;
+    }
+
+    .tituloBelt {
+
+        font-size: 3.7rem;
+    }
+
+    #navGrand {
+        font-size: 3.5rem;
+    }
+
+    .grandlineInfo {
+        margin-top: -250px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #infoInvert {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tituloGrand {
+        font-size: 5rem;
+    }
+
+    .Infoline {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .grandImagen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #calmImage {
+        margin-top: 50px;
+    }
+
+    .grandImages {
+        width: 25rem;
+        height: 15rem;
+        margin-top: 10px;
+        margin-bottom: -30px;
+    }
+
+    .imgsTripulantes {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .trpulantesNuevos {
+        display: none;
+    }
+
+    #subidadivGrand {
+        margin-left: 10px;
+        margin-top: -4.5rem;
+        bottom: -5rem;
+    }
+
+    #imgsubidaGrand {
+        width: 70px;
+        height: 70px;
+    }
+
+    /*Media Mobile*/
+
+    .bodyMedia {
+        display: grid;
+        grid-template-areas:
+            " header "
+            " portada "
+            " main "
+            " footer "
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 1.3fr 3.7fr 150px;
+    }
+
+    #logoMedia {
+        width: 300px;
+    }
+
+    .portadaMedia {
+        background-size: 70rem 107.2rem;
+        text-align: center;
+        height: unset;
+    }
+
+    .media {
+        font-size: 11rem;
+    }
+
+    .descripcionMedia {
+        font-size: 3.5rem;
+    }
+
+    .videosMedia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .videosMedia div {
+        margin-bottom: 30px;
+    }
+
+    .iframeMedia {
+        width: 380px;
+    }
+
+    .spotifyMedia {
+        width: 350px;
+        height: 600px;
+    }
+
+    .imgsCarrusel {
+        width: 26rem;
+        height: 20rem;
+        margin-left: 10px;
+        padding: -5px;
+    }
+
+    /* Se un Nakama Mobile */
+    .bodyNakama {
+        display: grid;
+        grid-template-areas:
+            " header "
+            " main "
+            " footer "
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1250px 150px;
+    }
+
+    .logoImagenakama{
+        width: 200px;
+        margin-bottom: -10px;
+    }
+
+    .tituloNakama{
+        font-size: 4rem;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form{
+        width: 23rem;
+        margin-left: 15px;
+    }
+
+    .contact-info{
+        margin-right: 0px;
+        width: 400px;
+        margin-top: -80px;
+    }
+
+    .imgsNakama{
+        width: 400px;
+    }
+
+    .imgsCalaveranakama{
+        width: 400px;
     }
 }
