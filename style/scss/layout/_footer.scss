@@ -1,0 +1,176 @@
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #0e0e0e;
+    @include flex(column);
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+    height: 50vh;
+    background-image: url(/imagenes/fondo.jpg);
+
+    .logo {
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+
+    .social-icons-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+
+        .social-icon {
+            height: 50px;
+            width: 50px;
+            @include radius(50px);
+            border: 1px solid #f2f2f2;
+            background-position: center;
+            background-size: 40%;
+            background-repeat: no-repeat;
+            margin: 1rem;
+
+            &:hover {
+                background-color: #121212;
+                filter: invert(1);
+            }
+
+            &:nth-of-type(1) {
+                background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png);
+                background-size: 100%;
+            }
+
+            &:nth-of-type(2) {
+                background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png);
+                background-size: 100%;
+            }
+
+            &:nth-of-type(3) {
+                background-image: url(https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000);
+                background-size: 100%;
+            }
+
+            &:nth-of-type(4) {
+                background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png);
+                background-size: 100%;
+            }
+        }
+    }
+
+    .footer-menu-container {
+        @extend .social-icons-container;
+        list-style-type: none;
+        color: black;
+        font-size: 18px;
+
+        .menu-item {
+            margin: 1rem 1.5rem;
+            cursor: pointer;
+            opacity: 0.6;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .copyright {
+        color: #0e0e0e;
+        text-align: center;
+    }
+}
+
+/* Footer Tripulaciones */
+.footerTrip {
+    height: 70vh;
+
+    .logoTrips {
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+
+}
+
+.social-iconTrips {
+    height: 50px;
+    width: 50px;
+    @include radius(50px);
+    border: 1px solid #f2f2f2;
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+
+    &:hover {
+        background-color: #121212;
+        filter: invert(1);
+    }
+
+    &:nth-of-type(1) {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png);
+        background-size: 100%;
+    }
+
+    &:nth-of-type(2) {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png);
+        background-size: 100%;
+    }
+
+    &:nth-of-type(3) {
+        background-image: url(https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000);
+        background-size: 100%;
+    }
+
+    &:nth-of-type(4) {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png);
+        background-size: 100%;
+    }
+
+    .menu-itemTrips {
+        margin: 1rem 1.5rem;
+        cursor: pointer;
+        opacity: 0.6;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .copyrightTrips {
+        color: #0e0e0e;
+        text-align: center;
+    }
+}
+
+/*Tripulaciones Footer Mobile*/
+@media screen and (max-width: 480px) {
+    #subidadivTrips {
+        margin-left: 10px;
+        margin-top: -8rem;
+        bottom: -15rem;
+
+        #imgsubidaTrips {
+            width: 170px;
+            height: 170px;
+        }
+    }
+
+    .footerTrip {
+        .logoTrips {
+            width: 500px;
+            height: 190px;
+        }
+
+        .social-iconTrips {
+            width: 100px;
+            height: 100px;
+        }
+
+        .copyrightTrips {
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+}

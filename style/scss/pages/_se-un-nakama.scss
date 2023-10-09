@@ -1,0 +1,188 @@
+.bodyNakama {
+    display: grid;
+    grid-template-areas:
+        " header header header "
+        " main main main "
+        " footer footer footer "
+    ;
+    grid-template-columns: 150px 1fr 3fr;
+    grid-template-rows: 150px 1fr 150px;
+    background: $BackgroundColor;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.mainNakama {
+    grid-area: main;
+
+    .tituloNakama {
+        text-align: left;
+        margin-left: 40px;
+        font-size: 6em;
+        margin-bottom: 30px;
+
+        span {
+            color: burlywood;
+        }
+    }
+
+    .content {
+        display: flex;
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            padding: 2em;
+            margin-top: -60px;
+
+            .contact-form {
+                background-image: url(/imagenes/fondo.jpg);
+                box-shadow: $BoxShadow;
+                @include radius(20px);
+                width: 45rem;
+
+                h3 {
+                    text-align: center;
+                    font-size: 3rem;
+                    color: black;
+                }
+
+                form {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+
+                    label {
+                        display: block;
+                        color: #0e0e0e;
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        margin: 0;
+                        padding: 1em;
+                    }
+
+                    .block {
+                        grid-column: 1 / 3;
+                    }
+
+                    input,
+                    textarea {
+                        width: 100%;
+                        padding: .7em;
+                        border: none;
+                        background: none;
+                        outline: 0;
+                        color: #fff;
+                        font-size: 1rem;
+                        border-bottom: 1px solid white;
+                    }
+
+                    button {
+                        @extend input;
+                        background: black;
+                        border: 0;
+                        text-transform: uppercase;
+                        padding: 1em;
+
+                        &:hover,
+                        &:focus {
+                            background: rgb(25, 27, 27);
+                            color: #fff;
+                            transition: background-color 1s ease-out;
+                            outline: 0;
+                        }
+
+                    }
+                }
+            }
+
+        }
+
+        .contact-info {
+            width: 500px;
+            margin-right: 200px;
+
+            .imgsNakama {
+                width: 500px;
+                margin-top: 90px;
+            }
+
+            .imgsCalaveranakama {
+                width: 500px;
+                margin-top: 150px;
+            }
+        }
+    }
+}
+
+/* Se un Nakama Mobile */
+@media screen and (max-width: 480px) {
+    .bodyNakama {
+        display: grid;
+        grid-template-areas:
+            " header "
+            " main "
+            " footer "
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 1250px 150px;
+    }
+
+    header {
+        .logoImagenakama {
+            width: 230px;
+            margin-bottom: -10px;
+        }
+
+        #mobileLogoNakama {
+            width: 300px;
+        }
+
+        #navNakamamobile {
+            font-size: 2rem;
+        }
+
+        #togglerNakama {
+            border: #0e0e0e solid 3px;
+            @include radius(30px);
+
+            #togglerIconNakama {
+                width: 50px;
+                height: 60px;
+            }
+        }
+    }
+
+    .mainNakama {
+        .tituloNakama {
+            font-size: 4rem;
+            text-align: center;
+            margin-left: 0px;
+        }
+
+        .content {
+            flex-direction: column;
+            align-items: center;
+
+            .contact-form {
+                width: 23rem !important;
+                margin-left: 15px;
+            }
+
+            .contact-info {
+                margin-right: 0px;
+                width: 400px;
+                margin-top: -80px;
+
+                .imgsNakama {
+                    width: 400px;
+                }
+
+                .imgsCalaveranakama {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}

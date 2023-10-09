@@ -1,0 +1,231 @@
+.bodyTrip {
+    display: grid;
+    grid-template-areas:
+        " header header header "
+        " portada portada portada "
+        " main main aside "
+        " main main aside "
+        " footer footer footer "
+    ;
+    grid-template-columns: 150px 3fr 1fr;
+    grid-template-rows: 150px 0.3fr 1fr 1fr 150px;
+}
+
+.portada {
+
+    grid-area: portada;
+    background-image: url(https://areajugones.sport.es/wp-content/uploads/2016/06/one-piece-great-pirate-colosseum.jpg);
+    background-position: center;
+    background-size: 1500px 850px;
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-left: 10px;
+    height: 108vh;
+    border-bottom: black solid 2px;
+
+    .trips {
+        font-size: 7rem;
+    }
+
+    .descripcionTrips {
+        font-size: 2rem;
+    }
+}
+
+.mainGrid {
+    grid-area: main;
+    background-color: $BackgroundColor;
+
+    .tripulacionVh {
+        height: 94vh;
+        margin-bottom: -20px;
+        border-bottom: $BordePrincipal 2px;
+
+        .tripulacionesInfo {
+            padding-left: 10px;
+            margin-top: 30px;
+
+            .tripName {
+                font-size: 4rem;
+            }
+
+            .tripulacion-imagenes {
+                @include flex(row);
+                align-items: flex-end;
+
+                .mugiwara {
+                    width: 40rem;
+                    height: 19rem;
+                }
+
+                .imgTrips {
+                    @include flex(column);
+                    margin-left: 10px;
+
+                    .calavera {
+                        width: 139px;
+                        height: 139px;
+                    }
+                }
+
+            }
+        }
+
+        .infoTripul {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.asideTrip {
+    border: $BordePrincipal 2px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+
+    .tripulacionesNav {
+        position: sticky;
+        top: 20px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+        margin-left: 20px;
+        padding: 20px;
+
+        .asideLink {
+            opacity: 0.7;
+            font-size: 1.5rem;
+            text-align: center;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* Tripulaciones Mobile */
+    .bodyTrip {
+        display: grid;
+        grid-template-areas:
+            " header "
+            " portada "
+            " aside "
+            " main "
+            " footer "
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 220px 0.1fr 0.1fr 2fr 150px;
+    }
+
+    header {
+        .headerTrips {
+            margin-bottom: 20px;
+
+            .logoImage {
+                width: 500px;
+            }
+        }
+
+        #navTrips {
+            margin-bottom: 30px;
+
+            #togglerTrips {
+                border: #0e0e0e solid 3px;
+                @include radius(40px);
+
+                #togglerIcontrips {
+                    width: 130px;
+                    height: 140px;
+                }
+            }
+
+            #mobileLogotrips {
+                width: 30rem;
+            }
+
+            #navTripsmobile {
+                font-size: 5rem
+            }
+
+            #offcanvasNavbar {
+                width: 700px;
+            }
+        }
+    }
+
+    .portada {
+        height: 210vh;
+        background-size: 130rem 140rem;
+
+        .trips {
+            font-size: 9.5rem;
+            font-weight: bold;
+        }
+
+        .descripcionTrips {
+            font-size: 4rem;
+        }
+    }
+
+    .mainGrid {
+
+        #vhBigmomyluffy {
+            height: 297vh;
+        }
+
+        .tripulacionVh {
+            height: 242vh;
+            text-align: center;
+            margin-bottom: 800px;
+            border: $BordePrincipal 10px;
+            border-bottom: 0px;
+            border-left: 0px;
+            border-right: 0px;
+        }
+
+        .tripulacionesInfo {
+            margin-top: 20px;
+
+            .tripName {
+                font-size: 8rem !important;
+                margin: 0px;
+            }
+
+            .mugiwara {
+                width: 45rem !important;
+                height: 27rem !important;
+                margin-top: 10px;
+            }
+
+            .calavera {
+                width: 205px !important;
+                height: 205px !important;
+            }
+
+            .infoTripul {
+                font-size: 4.5rem;
+            }
+        }
+    }
+
+    .tripulacionesNav {
+
+        position: static;
+        top: 0px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        padding: 20px;
+
+        .asideLink {
+            a {
+                font-family: $FuenteNavTripul;
+                font-size: 4rem;
+            }
+        }
+    }
+}

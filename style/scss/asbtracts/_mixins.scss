@@ -1,0 +1,8 @@
+@mixin flex ($direccion) {
+    display: flex;
+    flex-direction: ($direccion);
+}
+
+@mixin radius ($radio) {
+    border-radius: ($radio);
+}

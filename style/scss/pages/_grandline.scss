@@ -1,0 +1,228 @@
+.bodyGrand {
+    display: grid;
+    grid-template-areas:
+        " header header header "
+        " portada portada portada "
+        " main main main "
+        " footer footer footer "
+    ;
+    grid-template-columns: 150px 3fr 1fr;
+    grid-template-rows: 150px 0.3fr 2.5fr 150px;
+}
+
+.portadaGrand {
+    grid-area: portada;
+    background-image: url(/imagenes/Polos.webp);
+    background-position: center;
+    background-size: 92rem 49rem;
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-left: 10px;
+    height: 108vh;
+    border-bottom: black solid 2px;
+
+    .grandLine {
+        font-size: 7rem;
+    }
+
+    .descripcionGrand {
+        font-size: 2rem;
+    }
+
+    .tituloBelt {
+        font-family: $FuenteNavTripul;
+        font-weight: bold;
+    }
+
+    #navbarGrand {
+        @include flex(row);
+        font-weight: bold;
+        justify-content: space-between;
+
+        #navGrand {
+            font-family: $FuenteNavTripul;
+            font-weight: bold;
+            font-size: 2rem;
+            opacity: 0.6;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.grandLinevh {
+    border-bottom: $BordePrincipal 2px;
+
+    .grandlineInfo {
+        display: flex;
+
+        .tituloGrand {
+            font-size: 5rem;
+        }
+
+        .Infoline {
+            font-size: 2rem;
+        }
+
+        .grandImagen {
+            margin-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 20px;
+            @include flex(column);
+            justify-content: end;
+
+            .imgsTripulantes {
+                @include flex(row);
+
+                .trpulantesNuevos {
+                    margin-left: 0px;
+                    margin-right: 27px;
+                    margin-bottom: 20px;
+                    width: 305px;
+                    height: 200px;
+                }
+            }
+
+            .grandImages {
+                width: 40rem;
+                height: 19rem;
+            }
+        }
+    }
+}
+
+#marineford {
+    border-bottom: 0px;
+}
+
+/* Grand Line Mobile */
+@media screen and (max-width: 480px) {
+    .bodyGrand {
+        display: grid;
+        grid-template-areas:
+            " header "
+            " portada "
+            " main "
+            " footer "
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 0.8fr 2.5fr 150px;
+    }
+
+    header {
+        #logoGrand {
+            width: 250px;
+        }
+
+        #navgrandLine {
+            margin-bottom: 30px;
+
+            a {
+                font-size: 2rem;
+            }
+
+            #togglerGrand {
+                border: #0e0e0e solid 3px;
+                @include radius(30px);
+
+                #togglerIcongrand {
+                    width: 50px;
+                    height: 60px;
+                }
+            }
+
+            #mobileLogoGrand {
+                width: 200px;
+            }
+        }
+
+    }
+
+    .portadaGrand {
+        height: unset;
+        background-size: 70rem 189rem;
+
+        .grandLine {
+            font-size: 8.5rem !important;
+        }
+
+        .descripcionGrand {
+            font-size: 2.7rem !important;
+        }
+
+        .tituloBelt {
+
+            font-size: 3.7rem;
+        }
+
+        #navbarGrand {
+            flex-direction: column !important;
+
+            #navGrand {
+                font-size: 3rem !important;
+            }
+        }
+    }
+
+    .grandlineInfo {
+        margin-top: -250px;
+        @include flex(column-reverse);
+
+        .tituloGrand {
+            font-size: 5rem !important;
+            text-align: center;
+        }
+
+        .Infoline {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    #infoInvert {
+        @include flex(column);
+    }
+
+    #calmImage {
+        margin-top: 50px;
+    }
+
+    .grandImagen {
+        @include flex(column);
+        justify-content: center;
+        align-items: center;
+
+        .imgsTripulantes {
+            @include flex(row);
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+
+            .trpulantesNuevos {
+                display: none;
+            }
+        }
+
+        .grandImages {
+            width: 24rem !important;
+            height: 15rem !important;
+            margin-top: 10px;
+            margin-bottom: -30px;
+        }
+    }
+
+    #subidadivGrand {
+        margin-left: 10px;
+        margin-top: -4.5rem;
+        bottom: -15rem;
+
+        #imgsubidaGrand {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}

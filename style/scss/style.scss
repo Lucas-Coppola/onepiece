@@ -1,0 +1,59 @@
+// Variables
+@import "./asbtracts/variables";
+
+// Mixins
+@import "./asbtracts/mixins";
+
+/* Selector Universal */
+@import "./base/reset";
+
+/*Index*/
+@import "./pages/index.scss";
+
+/* Tripulaciones */
+@import "./pages/tripulaciones.scss";
+
+/* Grand Line */
+@import "./pages/grandline.scss";
+
+/* Footer Universal */
+@import "./layout/footer.scss";
+
+/* Media */
+@import "./pages/media.scss";
+
+/* Se Un Nakama */
+@import "./pages/se-un-nakama.scss";
+
+@media screen and (min-width: 991px) {
+    .carrusel {
+        display: none;
+    }
+
+    #navMobile {
+
+        display: none;
+
+    }
+
+    #navgrandLine {
+
+        display: none;
+
+    }
+
+    #navMedia {
+        display: none;
+    }
+
+    #navTrips {
+        display: none;
+    }
+
+    .subidaDiv {
+
+        display: none;
+
+    }
+}
+

@@ -1,0 +1,150 @@
+.bodyMedia {
+    display: grid;
+    grid-template-areas:
+        " header header header "
+        " portada portada portada "
+        " main main main "
+        " footer footer footer "
+    ;
+    grid-template-columns: 150px 1fr 3fr;
+    grid-template-rows: 150px 1fr 3.4fr 150px;
+}
+
+.portadaMedia {
+    grid-area: portada;
+    background-image: url(https://i.pinimg.com/originals/51/04/89/51048937326d0a6d8c2fc6f4910d1b2d.jpg);
+    background-position: center;
+    background-size: 1500px 774px;
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    padding-left: 10px;
+    height: 108vh;
+
+    .media {
+        font-size: 15rem;
+        text-align: left;
+    }
+
+    .descripcionMedia {
+        font-size: 2.9rem;
+        text-align: left;
+    }
+}
+
+
+.mainMedia {
+    background-color: $BackgroundColor;
+    grid-area: main;
+
+    .sectionVideos {
+        margin-bottom: 70px;
+        padding-bottom: 100px;
+        @include radius(40px);
+        box-shadow: $BoxShadow;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        .tituloMedia {
+            text-align: center;
+            font-size: 5rem;
+        }
+
+        .videosMedia {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px;
+
+            div {
+                border: $BordePrincipal 4px;
+                padding: 5px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+
+        .spotify {
+            border: $BordePrincipal 4px;
+            @include radius(20px);
+        }
+
+        .imgsCarrusel {
+            width: 1200px;
+            height: 600px;
+            padding: 10px;
+            border: $BordePrincipal 4px;
+            margin-left: 40px;
+        }
+    }
+}
+
+/*Media Mobile*/
+@media screen and (max-width: 480px) {
+    .bodyMedia {
+        display: grid;
+        grid-template-areas:
+            " header "
+            " portada "
+            " main "
+            " footer "
+        ;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 1.3fr 3.55fr 150px;
+    }
+
+    #logoMedia {
+        width: 270px;
+    }
+
+    #mobileLogomedia {
+        width: 300px;
+    }
+
+    .portadaMedia {
+        background-size: 70rem 111.5rem;
+        text-align: center;
+        height: unset;
+
+        .media {
+            font-size: 11rem;
+        }
+
+        .descripcionMedia {
+            font-size: 3.5rem;
+        }
+    }
+
+    .mainMedia {
+        .videosMedia {
+            @include flex(column);
+            align-items: center;
+
+            div {
+                margin-bottom: 30px;
+            }
+
+            .iframeMedia {
+                width: 380px;
+            }
+
+            .spotifyMedia {
+                width: 350px;
+                height: 600px;
+            }
+        }
+
+        .imgsCarrusel {
+            width: 26rem !important;
+            height: 20rem !important;
+            margin-left: 10px !important;
+            padding: -5px !important;
+        }
+    }
+
+    #subidadivMedia {
+        margin-top: -75px;
+        bottom: -90px;
+    }
+}

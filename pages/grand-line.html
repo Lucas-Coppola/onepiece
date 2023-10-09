@@ -19,12 +19,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://png.pngtree.com/png-vector/20230120/ourmid/pngtree-straw-hat-cartoon-illustration-png-image_6562738.png"/>
+    
+    <!-- Libreria Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../style/css/style.css">
 </head>
 
 <body class="bodyGrand">
     <header>
-        <div class="headerTrips">
+        <div class="headerTrips" data-aos="fade-left">
             <a id="Home" href="../index.html"> <img class="logoImage" id="logoGrand" src="../imagenes/logo.png"
                     alt="Logo One Piece TV"></a>
         </div>
@@ -99,8 +106,8 @@
         </nav>
     </header>
 
-    <portada class="portadaGrand">
-        <section>
+    <div class="portadaGrand">
+        <section data-aos="fade-down">
             <h1 class="grandLine"> CONOCE EL GRAND LINE</h1>
             <br>
             <p class="descripcionGrand"> Grand Line es la corriente oceánica que se encuentra rodeada por los Calm Belt
@@ -109,7 +116,7 @@
                 encontrando enemigos, los piratas más fuertes, islas e infinidad de cosas; en busca del One Piece.</p>
             <div id="navbarNav">
                 <h2 class="tituloBelt"> Islas y Calm Belt</h2>
-                <ul class="navbar-nav" id="navbarGrand">
+                <ul class="navbar-nav" id="navbarGrand" data-aos="fade-down">
                     <li class="asideLink" class="nav-item">
                         <a class="nav-link" id="navGrand" href="#calmbelt"> Calmbelt </a>
                     </li>
@@ -131,20 +138,21 @@
                 </ul>
             </div>
         </section>
-    </portada>
+    </div>
 
     <main class="mainGrid">
         <section class="mainGrand">
             <article class="grandLinevh" id="calmbelt">
                 <div class="grandlineInfo" id="infoInvert">
                     <div class="grandImagen" id="calmImage">
-                        <div class="imgsTripulantes">
+                        <div class="imgsTripulantes" data-aos="fade-down">
                             <img class="trpulantesNuevos" src="../imagenes/reyesdelmar.jpg" alt="Reyes del Mar">
                         </div>
-                        <img class="grandImages" src="../imagenes/Calmbeltmap.webp" alt="Calm Belt">
+                        <img data-aos="fade-right" class="grandImages" src="../imagenes/Calmbeltmap.webp"
+                            alt="Calm Belt">
                     </div>
                     <br>
-                    <div class="infoGrand">
+                    <div class="infoGrand" data-aos="zoom-in-down">
                         <h2 class="tituloGrand"> Calm Belt</h2>
                         <p class="Infoline">
                             Los Calm Belt son dos áreas que están justo al norte y al sur, rodeando Grand Line. Estas
@@ -158,9 +166,9 @@
                 </div>
             </article>
             <br><br>
-            <article class="waterSevenvh" id="water">
+            <article class="grandLinevh">
                 <div class="grandlineInfo">
-                    <div class="infoGrand">
+                    <div class="infoGrand" data-aos="zoom-in-down">
                         <h2 class="tituloGrand"> Water Seven </h2>
                         <p class="Infoline">
                             Water Seven es una ciudad ubicada en la mitad del Grand Line, conocida por sus carpinteros.
@@ -174,13 +182,14 @@
                         </p>
                     </div>
                     <br>
-                    <div class="grandImagen">
-                        <div class="imgsTripulantes">
+                    <div id="water" class="grandImagen">
+                        <div class="imgsTripulantes" data-aos="fade-down">
                             <img class="trpulantesNuevos" src="../imagenes/franky.webp" alt="Franky">
                             <img class="trpulantesNuevos" src="../imagenes/nico-robin-one-piece_1024x1024.webp"
                                 alt="Nico Robin">
                         </div>
-                        <img class="grandImages" src="../imagenes/Water7vista.webp" alt="Isla de Water Seven">
+                        <img data-aos="fade-right" class="grandImages" src="../imagenes/Water7vista.webp"
+                            alt="Isla de Water Seven">
                     </div>
                 </div>
             </article>
@@ -188,13 +197,14 @@
             <article class="grandLinevh" id="drum">
                 <div class="grandlineInfo" id="infoInvert">
                     <div class="grandImagen">
-                        <div class="imgsTripulantes">
+                        <div class="imgsTripulantes" data-aos="fade-down">
                             <img class="trpulantesNuevos" src="../imagenes/chopper.webp" alt="Tony Tony Chopper">
                         </div>
-                        <img class="grandImages" src="../imagenes/Isla_de_Drum.webp" alt="Isla de Drum">
+                        <img data-aos="fade-right" class="grandImages" src="../imagenes/Isla_de_Drum.webp"
+                            alt="Isla de Drum">
                     </div>
                     <br>
-                    <div class="infoGrand">
+                    <div class="infoGrand" data-aos="zoom-in-down">
                         <h2 class="tituloGrand"> Isla de Drum </h2>
                         <p class="Infoline">
                             La isla de Drum es una isla invernal ubicada en la mitad del Grand Line. Es la localización
@@ -208,9 +218,9 @@
                 </div>
             </article>
             <br><br>
-            <article class="waterSevenvh" id="wano">
+            <article class="grandLinevh" id="wano">
                 <div class="grandlineInfo">
-                    <div class="infoGrand">
+                    <div class="infoGrand" data-aos="zoom-in-down">
                         <h2 class="tituloGrand"> País de Wano </h2>
                         <p class="Infoline">
                             El País de Wano es un país situado en el Nuevo Mundo, no afiliado al Gobierno Mundial. Es
@@ -224,27 +234,29 @@
                     </div>
                     <br>
                     <div class="grandImagen">
-                        <div class="imgsTripulantes">
+                        <div class="imgsTripulantes" data-aos="fade-down">
                             <img class="trpulantesNuevos" src="../imagenes/jinbei.jpg" alt="Jimbe">
                             <img class="trpulantesNuevos" src="../imagenes/Kozuki_Family_Portrait.webp"
                                 alt="Clan Kozuki">
                         </div>
-                        <img class="grandImages" src="../imagenes/wanokuni.jpg" alt="País de Wano">
+                        <img data-aos="fade-right" class="grandImages" src="../imagenes/wanokuni.jpg"
+                            alt="País de Wano">
                     </div>
                 </div>
             </article>
             <br><br>
-            <article class="grandLinevh" id="wholecake">
+            <article class="grandLinevh" id="wholecake" data-aos="fade-right">
                 <div class="grandlineInfo" id="infoInvert">
                     <div class="grandImagen">
-                        <div class="imgsTripulantes">
+                        <div class="imgsTripulantes" data-aos="fade-down">
                             <img class="trpulantesNuevos" src="../imagenes/bigmom.webp" alt="Big Mom">
                             <img class="trpulantesNuevos" src="../imagenes/sanji.webp" alt="Sanji">
                         </div>
-                        <img class="grandImages" src="../imagenes/wholecake.png" alt="Isla Whole Cake">
+                        <img data-aos="fade-right" class="grandImages" src="../imagenes/wholecake.png"
+                            alt="Isla Whole Cake">
                     </div>
                     <br>
-                    <div class="infoGrand">
+                    <div class="infoGrand" data-aos="zoom-in-down">
                         <h2 class="tituloGrand"> Isla Whole Cake </h2>
                         <p class="Infoline">
                             Whole Cake Island es una isla del Nuevo Mundo, segunda mitad del Grand Line, donde residía
@@ -259,7 +271,7 @@
                 </div>
             </article>
             <br><br>
-            <article id="marineford">
+            <article class="grandLinevh" id="marineford" data-aos="zoom-in-down">
                 <div class="grandlineInfo">
                     <div class="infoGrand">
                         <h2 class="tituloGrand"> Marineford </h2>
@@ -278,11 +290,12 @@
                     </div>
                     <br>
                     <div class="grandImagen">
-                        <div class="imgsTripulantes">
+                        <div class="imgsTripulantes" data-aos="fade-down">
                             <img class="trpulantesNuevos" src="../imagenes/ace.jpeg" alt="Ace">
                             <img class="trpulantesNuevos" src="../imagenes/Marine.webp" alt="Marina">
                         </div>
-                        <img class="grandImages" src="../imagenes/Marineford.webp" alt="Sede de la Marina">
+                        <img data-aos="fade-right" class="grandImages" src="../imagenes/Marineford.webp"
+                            alt="Sede de la Marina">
                     </div>
                 </div>
             </article>
@@ -310,6 +323,14 @@
         <span class="copyright">&copy;2023, One Piece TV. Todos los derechos reservados.</span>
     </footer>
 
+    <!--Script AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <!--Script Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
