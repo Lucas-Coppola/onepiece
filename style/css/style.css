@@ -7,17 +7,10 @@
   list-style: none;
 }
 
-/*Index*/
-body {
-  display: grid;
-  grid-template-areas: "header  header  header" "info  info  aside" "footer  footer  footer";
-  grid-template-columns: 150px 3fr 0.5fr;
-  grid-template-rows: 150px 1fr 150px;
-}
-
+/* Header Universal */
 header {
   font-family: "Caesar Dressing", cursive;
-  background-image: url(/imagenes/fondo.jpg);
+  background-image: url(../../imagenes/fondo-cover.jpg);
   grid-area: header;
   display: flex;
   justify-content: space-between;
@@ -30,10 +23,19 @@ header img {
 header li {
   font-family: "Caesar Dressing", cursive;
   margin: 20px;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: 590;
 }
 header li a:hover {
   text-decoration: underline;
+}
+
+/*Index*/
+body {
+  display: grid;
+  grid-template-areas: "header  header  header" "info  info  aside" "footer  footer  footer";
+  grid-template-columns: 150px 3fr 0.5fr;
+  grid-template-rows: 150px 1fr 150px;
 }
 
 .infoGrid {
@@ -144,62 +146,62 @@ header li a:hover {
   overflow: unset;
 }
 .infoGrid .Mundoinfo .mundoInfo .arcos {
-  background-image: url(/imagenes/arcos.jpg);
+  background-image: url(../../imagenes/arcos.jpg);
   padding: 70px 50px;
   border-width: 7px;
   margin: 20px 70px;
   padding: 65px 20px 0px 0px;
 }
 .infoGrid .Mundoinfo .mundoInfo .arcos:hover {
-  background-image: url(/imagenes/blurred-arcos.jpg);
+  background-image: url(../../imagenes/blurred-arcos.jpg);
 }
 .infoGrid .Mundoinfo .mundoInfo .manga {
-  background-image: url(/imagenes/manga.jpg);
+  background-image: url(../../imagenes/manga.jpg);
   padding: 70px 30px;
   border-width: 7px;
   margin: 20px 70px;
   grid-area: manga;
 }
 .infoGrid .Mundoinfo .mundoInfo .manga:hover {
-  background-image: url(/imagenes/blurred-manga.jpg);
+  background-image: url(../../imagenes/blurred-manga.jpg);
 }
 .infoGrid .Mundoinfo .mundoInfo .anime {
-  background-image: url(/imagenes/anime.jpe);
+  background-image: url(../../imagenes/anime.jpe);
   margin: 20px 70px;
   padding: 65px 20px 0px 0px;
   grid-area: anime;
 }
 .infoGrid .Mundoinfo .mundoInfo .anime:hover {
-  background-image: url(/imagenes/blurred-anime.jpg);
+  background-image: url(../../imagenes/blurred-anime.jpg);
 }
 .infoGrid .Mundoinfo .mundoInfo .yonkou {
-  background-image: url(/imagenes/yonkous.webp);
+  background-image: url(../../imagenes/yonkous.webp);
   padding: 100px 10px;
   margin: 20px 70px;
   padding: 65px 20px 0px 0px;
   grid-area: yonkou;
 }
 .infoGrid .Mundoinfo .mundoInfo .yonkou:hover {
-  background-image: url(/imagenes/blurred-yonkou.jpg);
+  background-image: url(../../imagenes/blurred-yonkou.jpg);
 }
 .infoGrid .Mundoinfo .mundoInfo .frutas {
-  background-image: url(/imagenes/frutas.webp);
+  background-image: url(../../imagenes/frutas.webp);
   padding: 65px 20px 0px;
   margin: 20px 70px;
   grid-area: frutas;
 }
 .infoGrid .Mundoinfo .mundoInfo .frutas:hover {
-  background-image: url(/imagenes/blurred-frutas.jpg);
+  background-image: url(../../imagenes/blurred-frutas.jpg);
 }
 .infoGrid .Mundoinfo .mundoInfo .personajes {
-  background-image: url(/imagenes/personajes.webp);
+  background-image: url(../../imagenes/personajes.webp);
   padding: 70px 0px;
   border-width: 7px;
   margin: 20px 70px;
   grid-area: personajes;
 }
 .infoGrid .Mundoinfo .mundoInfo .personajes:hover {
-  background-image: url(/imagenes/blurred-personajes.jpg);
+  background-image: url(../../imagenes/blurred-personajes.jpg);
   font-size: 42px;
 }
 
@@ -379,12 +381,12 @@ aside .Aside #volumenNuevo img {
 
 .portada {
   grid-area: portada;
-  background-image: url(https://areajugones.sport.es/wp-content/uploads/2016/06/one-piece-great-pirate-colosseum.jpg);
+  background-image: url(../../../imagenes/one-piece-tripulaciones-fondo.jpg);
   background-position: center;
   background-size: 1500px 850px;
   background-repeat: no-repeat;
   font-weight: bolder;
-  color: rgb(255, 255, 255);
+  color: white;
   text-align: center;
   padding-left: 10px;
   height: 108vh;
@@ -404,6 +406,7 @@ aside .Aside #volumenNuevo img {
 .mainGrid .tripulacionVh {
   height: 94vh;
   margin-bottom: -20px;
+  margin-top: 40px;
   border-bottom: burlywood solid 2px;
 }
 .mainGrid .tripulacionVh .tripulacionesInfo {
@@ -417,6 +420,7 @@ aside .Aside #volumenNuevo img {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
+  margin-bottom: 20px;
 }
 .mainGrid .tripulacionVh .tripulacionesInfo .tripulacion-imagenes .mugiwara {
   width: 40rem;
@@ -428,11 +432,15 @@ aside .Aside #volumenNuevo img {
   margin-left: 10px;
 }
 .mainGrid .tripulacionVh .tripulacionesInfo .tripulacion-imagenes .imgTrips .calavera {
-  width: 139px;
-  height: 139px;
+  width: 144px;
+  height: 144px;
+  margin-top: 15px;
 }
 .mainGrid .tripulacionVh .infoTripul {
   font-size: 1.1rem;
+}
+.mainGrid .tripulacionVh #parrafoAparte {
+  margin-top: -10px;
 }
 
 .asideTrip {
@@ -487,7 +495,7 @@ aside .Aside #volumenNuevo img {
     width: 30rem;
   }
   header #navTrips #navTripsmobile {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   header #navTrips #offcanvasNavbar {
     width: 700px;
@@ -504,7 +512,7 @@ aside .Aside #volumenNuevo img {
     font-size: 4rem;
   }
   .mainGrid #vhBigmomyluffy {
-    height: 297vh;
+    height: 305vh;
   }
   .mainGrid .tripulacionVh {
     height: 242vh;
@@ -557,7 +565,7 @@ aside .Aside #volumenNuevo img {
 
 .portadaGrand {
   grid-area: portada;
-  background-image: url(/imagenes/Polos.webp);
+  background-image: url(../../imagenes/grand-line-fondo.jpg);
   background-position: center;
   background-size: 92rem 49rem;
   background-repeat: no-repeat;
@@ -572,7 +580,7 @@ aside .Aside #volumenNuevo img {
   font-size: 7rem;
 }
 .portadaGrand .descripcionGrand {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 .portadaGrand .tituloBelt {
   font-family: "Akronim", cursive;
@@ -681,16 +689,19 @@ aside .Aside #volumenNuevo img {
   .portadaGrand #navbarGrand #navGrand {
     font-size: 3rem !important;
   }
-  .grandlineInfo {
+  .grandLinevh {
+    margin-bottom: 50px;
+  }
+  .grandLinevh .grandlineInfo {
     margin-top: -250px;
     display: flex;
     flex-direction: column-reverse;
   }
-  .grandlineInfo .tituloGrand {
+  .grandLinevh .grandlineInfo .tituloGrand {
     font-size: 5rem !important;
     text-align: center;
   }
-  .grandlineInfo .Infoline {
+  .grandLinevh .grandlineInfo .Infoline {
     font-size: 2rem;
     text-align: center;
   }
@@ -706,6 +717,7 @@ aside .Aside #volumenNuevo img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px !important;
   }
   .grandImagen .imgsTripulantes {
     display: flex;
@@ -733,155 +745,6 @@ aside .Aside #volumenNuevo img {
     height: 70px;
   }
 }
-/* Footer Universal */
-footer {
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  background-color: #0e0e0e;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  grid-area: footer;
-  height: 50vh;
-  background-image: url(/imagenes/fondo.jpg);
-}
-footer .logo {
-  height: 80px;
-  margin-bottom: 1rem;
-}
-footer .social-icons-container, footer .footer-menu-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-footer .social-icons-container .social-icon, footer .footer-menu-container .social-icon {
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  border: 1px solid #f2f2f2;
-  background-position: center;
-  background-size: 40%;
-  background-repeat: no-repeat;
-  margin: 1rem;
-}
-footer .social-icons-container .social-icon:hover, footer .footer-menu-container .social-icon:hover {
-  background-color: #121212;
-  filter: invert(1);
-}
-footer .social-icons-container .social-icon:nth-of-type(1), footer .footer-menu-container .social-icon:nth-of-type(1) {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png);
-  background-size: 100%;
-}
-footer .social-icons-container .social-icon:nth-of-type(2), footer .footer-menu-container .social-icon:nth-of-type(2) {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png);
-  background-size: 100%;
-}
-footer .social-icons-container .social-icon:nth-of-type(3), footer .footer-menu-container .social-icon:nth-of-type(3) {
-  background-image: url(https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000);
-  background-size: 100%;
-}
-footer .social-icons-container .social-icon:nth-of-type(4), footer .footer-menu-container .social-icon:nth-of-type(4) {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png);
-  background-size: 100%;
-}
-footer .footer-menu-container {
-  list-style-type: none;
-  color: black;
-  font-size: 18px;
-}
-footer .footer-menu-container .menu-item {
-  margin: 1rem 1.5rem;
-  cursor: pointer;
-  opacity: 0.6;
-}
-footer .footer-menu-container .menu-item:hover {
-  opacity: 1;
-}
-footer .copyright {
-  color: #0e0e0e;
-  text-align: center;
-}
-
-/* Footer Tripulaciones */
-.footerTrip {
-  height: 70vh;
-}
-.footerTrip .logoTrips {
-  height: 80px;
-  margin-bottom: 1rem;
-}
-
-.social-iconTrips {
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  border: 1px solid #f2f2f2;
-  background-position: center;
-  background-size: 40%;
-  background-repeat: no-repeat;
-  margin: 1rem;
-}
-.social-iconTrips:hover {
-  background-color: #121212;
-  filter: invert(1);
-}
-.social-iconTrips:nth-of-type(1) {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png);
-  background-size: 100%;
-}
-.social-iconTrips:nth-of-type(2) {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png);
-  background-size: 100%;
-}
-.social-iconTrips:nth-of-type(3) {
-  background-image: url(https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000);
-  background-size: 100%;
-}
-.social-iconTrips:nth-of-type(4) {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png);
-  background-size: 100%;
-}
-.social-iconTrips .menu-itemTrips {
-  margin: 1rem 1.5rem;
-  cursor: pointer;
-  opacity: 0.6;
-}
-.social-iconTrips .menu-itemTrips:hover {
-  opacity: 1;
-}
-.social-iconTrips .copyrightTrips {
-  color: #0e0e0e;
-  text-align: center;
-}
-
-/*Tripulaciones Footer Mobile*/
-@media screen and (max-width: 480px) {
-  #subidadivTrips {
-    margin-left: 10px;
-    margin-top: -8rem;
-    bottom: -15rem;
-  }
-  #subidadivTrips #imgsubidaTrips {
-    width: 170px;
-    height: 170px;
-  }
-  .footerTrip .logoTrips {
-    width: 500px;
-    height: 190px;
-  }
-  .footerTrip .social-iconTrips {
-    width: 100px;
-    height: 100px;
-  }
-  .footerTrip .copyrightTrips {
-    font-size: 3rem;
-    text-align: center;
-  }
-}
 /* Media */
 .bodyMedia {
   display: grid;
@@ -892,7 +755,7 @@ footer .copyright {
 
 .portadaMedia {
   grid-area: portada;
-  background-image: url(https://i.pinimg.com/originals/51/04/89/51048937326d0a6d8c2fc6f4910d1b2d.jpg);
+  background-image: url(../../../imagenes/media-portada.jpg);
   background-position: center;
   background-size: 1500px 774px;
   background-repeat: no-repeat;
@@ -1035,7 +898,7 @@ footer .copyright {
   margin-top: -60px;
 }
 .mainNakama .content .contact-wrapper .contact-form {
-  background-image: url(/imagenes/fondo.jpg);
+  background-image: url(../../imagenes/fondo.jpg);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   border-radius: 20px;
   width: 45rem;
@@ -1146,6 +1009,155 @@ footer .copyright {
   }
   .mainNakama .content .contact-info .imgsCalaveranakama {
     width: 400px;
+  }
+}
+/* Footer Universal */
+footer {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #0e0e0e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: footer;
+  height: 50vh;
+  background-image: url(../../imagenes/fondo.jpg);
+}
+footer .logo {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+footer .social-icons-container, footer .footer-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+footer .social-icons-container .social-icon, footer .footer-menu-container .social-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid #f2f2f2;
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+footer .social-icons-container .social-icon:hover, footer .footer-menu-container .social-icon:hover {
+  background-color: #121212;
+  filter: invert(1);
+}
+footer .social-icons-container .social-icon:nth-of-type(1), footer .footer-menu-container .social-icon:nth-of-type(1) {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png);
+  background-size: 100%;
+}
+footer .social-icons-container .social-icon:nth-of-type(2), footer .footer-menu-container .social-icon:nth-of-type(2) {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png);
+  background-size: 100%;
+}
+footer .social-icons-container .social-icon:nth-of-type(3), footer .footer-menu-container .social-icon:nth-of-type(3) {
+  background-image: url(https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000);
+  background-size: 100%;
+}
+footer .social-icons-container .social-icon:nth-of-type(4), footer .footer-menu-container .social-icon:nth-of-type(4) {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png);
+  background-size: 100%;
+}
+footer .footer-menu-container {
+  list-style-type: none;
+  color: black;
+  font-size: 18px;
+}
+footer .footer-menu-container .menu-item {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+footer .footer-menu-container .menu-item:hover {
+  opacity: 1;
+}
+footer .copyright {
+  color: #0e0e0e;
+  text-align: center;
+}
+
+/* Footer Tripulaciones */
+.footerTrip {
+  height: 70vh;
+}
+.footerTrip .logoTrips {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.social-iconTrips {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid #f2f2f2;
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+.social-iconTrips:hover {
+  background-color: #121212;
+  filter: invert(1);
+}
+.social-iconTrips:nth-of-type(1) {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png);
+  background-size: 100%;
+}
+.social-iconTrips:nth-of-type(2) {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png);
+  background-size: 100%;
+}
+.social-iconTrips:nth-of-type(3) {
+  background-image: url(https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000);
+  background-size: 100%;
+}
+.social-iconTrips:nth-of-type(4) {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png);
+  background-size: 100%;
+}
+.social-iconTrips .menu-itemTrips {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.social-iconTrips .menu-itemTrips:hover {
+  opacity: 1;
+}
+.social-iconTrips .copyrightTrips {
+  color: #0e0e0e;
+  text-align: center;
+}
+
+/*Tripulaciones Footer Mobile*/
+@media screen and (max-width: 480px) {
+  #subidadivTrips {
+    margin-left: 10px;
+    margin-top: -8rem;
+    bottom: -15rem;
+  }
+  #subidadivTrips #imgsubidaTrips {
+    width: 170px;
+    height: 170px;
+  }
+  .footerTrip .logoTrips {
+    width: 500px;
+    height: 190px;
+  }
+  .footerTrip .social-iconTrips {
+    width: 100px;
+    height: 100px;
+  }
+  .footerTrip .copyrightTrips {
+    font-size: 3rem;
+    text-align: center;
   }
 }
 @media screen and (min-width: 991px) {

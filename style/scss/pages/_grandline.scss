@@ -12,7 +12,7 @@
 
 .portadaGrand {
     grid-area: portada;
-    background-image: url(/imagenes/Polos.webp);
+    background-image: url(../../imagenes/grand-line-fondo.jpg);
     background-position: center;
     background-size: 92rem 49rem;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
     }
 
     .descripcionGrand {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     .tituloBelt {
@@ -168,18 +168,22 @@
         }
     }
 
-    .grandlineInfo {
-        margin-top: -250px;
-        @include flex(column-reverse);
+    .grandLinevh {
+        margin-bottom: 50px;
 
-        .tituloGrand {
-            font-size: 5rem !important;
-            text-align: center;
-        }
+        .grandlineInfo {
+            margin-top: -250px;
+            @include flex(column-reverse);
 
-        .Infoline {
-            font-size: 2rem;
-            text-align: center;
+            .tituloGrand {
+                font-size: 5rem !important;
+                text-align: center;
+            }
+
+            .Infoline {
+                font-size: 2rem;
+                text-align: center;
+            }
         }
     }
 
@@ -195,6 +199,7 @@
         @include flex(column);
         justify-content: center;
         align-items: center;
+        margin-bottom: 40px !important;
 
         .imgsTripulantes {
             @include flex(row);

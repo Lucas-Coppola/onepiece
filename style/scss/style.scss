@@ -7,6 +7,9 @@
 /* Selector Universal */
 @import "./base/reset";
 
+/* Header Universal */
+@import "./layout/header";
+
 /*Index*/
 @import "./pages/index.scss";
 
@@ -16,14 +19,14 @@
 /* Grand Line */
 @import "./pages/grandline.scss";
 
-/* Footer Universal */
-@import "./layout/footer.scss";
-
 /* Media */
 @import "./pages/media.scss";
 
 /* Se Un Nakama */
 @import "./pages/se-un-nakama.scss";
+
+/* Footer Universal */
+@import "./layout/footer.scss";
 
 @media screen and (min-width: 991px) {
     .carrusel {

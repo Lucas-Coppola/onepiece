@@ -12,14 +12,13 @@
 }
 
 .portada {
-
     grid-area: portada;
-    background-image: url(https://areajugones.sport.es/wp-content/uploads/2016/06/one-piece-great-pirate-colosseum.jpg);
+    background-image: url(../../../imagenes/one-piece-tripulaciones-fondo.jpg);
     background-position: center;
     background-size: 1500px 850px;
     background-repeat: no-repeat;
     font-weight: bolder;
-    color: rgb(255, 255, 255);
+    color: white;
     text-align: center;
     padding-left: 10px;
     height: 108vh;
@@ -41,6 +40,7 @@
     .tripulacionVh {
         height: 94vh;
         margin-bottom: -20px;
+        margin-top: 40px;
         border-bottom: $BordePrincipal 2px;
 
         .tripulacionesInfo {
@@ -54,6 +54,7 @@
             .tripulacion-imagenes {
                 @include flex(row);
                 align-items: flex-end;
+                margin-bottom: 20px;
 
                 .mugiwara {
                     width: 40rem;
@@ -65,8 +66,9 @@
                     margin-left: 10px;
 
                     .calavera {
-                        width: 139px;
-                        height: 139px;
+                        width: 144px;
+                        height: 144px;
+                        margin-top: 15px;
                     }
                 }
 
@@ -75,6 +77,10 @@
 
         .infoTripul {
             font-size: 1.1rem;
+        }
+
+        #parrafoAparte{
+            margin-top: -10px;
         }
     }
 }
@@ -148,7 +154,7 @@
             }
 
             #navTripsmobile {
-                font-size: 5rem
+                font-size: 4rem
             }
 
             #offcanvasNavbar {
@@ -172,9 +178,8 @@
     }
 
     .mainGrid {
-
         #vhBigmomyluffy {
-            height: 297vh;
+            height: 305vh;
         }
 
         .tripulacionVh {

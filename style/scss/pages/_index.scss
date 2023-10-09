@@ -9,30 +9,6 @@ body {
     grid-template-rows: 150px 1fr 150px;
 }
 
-header {
-    font-family: 'Caesar Dressing', cursive;
-    background-image: url(/imagenes/fondo.jpg);
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-
-    img {
-        width: 300px;
-        margin: 10px;
-    }
-
-    li {
-        font-family: 'Caesar Dressing', cursive;
-        margin: 20px;
-        font-size: 20px;
-
-        a:hover {
-            text-decoration: underline;
-        }
-    }
-}
-
 .infoGrid {
     background-color: $BackgroundColor;
     grid-area: info;
@@ -157,73 +133,73 @@ header {
             }
 
             .arcos {
-                background-image: url(/imagenes/arcos.jpg);
+                background-image: url(../../imagenes/arcos.jpg);
                 padding: 70px 50px;
                 border-width: 7px;
                 margin: 20px 70px;
                 padding: 65px 20px 0px 0px;
 
                 &:hover {
-                    background-image: url(/imagenes/blurred-arcos.jpg);
+                    background-image: url(../../imagenes/blurred-arcos.jpg);
                 }
             }
 
             .manga {
-                background-image: url(/imagenes/manga.jpg);
+                background-image: url(../../imagenes/manga.jpg);
                 padding: 70px 30px;
                 border-width: 7px;
                 margin: 20px 70px;
                 grid-area: manga;
 
                 &:hover {
-                    background-image: url(/imagenes/blurred-manga.jpg);
+                    background-image: url(../../imagenes/blurred-manga.jpg);
                 }
             }
 
             .anime {
-                background-image: url(/imagenes/anime.jpe);
+                background-image: url(../../imagenes/anime.jpe);
                 margin: 20px 70px;
                 padding: 65px 20px 0px 0px;
                 grid-area: anime;
 
                 &:hover {
-                    background-image: url(/imagenes/blurred-anime.jpg);
+                    background-image: url(../../imagenes/blurred-anime.jpg);
                 }
             }
 
             .yonkou {
-                background-image: url(/imagenes/yonkous.webp);
+                background-image: url(../../imagenes/yonkous.webp);
                 padding: 100px 10px;
                 margin: 20px 70px;
                 padding: 65px 20px 0px 0px;
                 grid-area: yonkou;
 
                 &:hover {
-                    background-image: url(/imagenes/blurred-yonkou.jpg);
+                    background-image: url(../../imagenes/blurred-yonkou.jpg);
                 }
             }
 
             .frutas {
-                background-image: url(/imagenes/frutas.webp);
+                background-image: url(../../imagenes/frutas.webp);
                 padding: 65px 20px 0px;
                 margin: 20px 70px;
                 grid-area: frutas;
 
                 &:hover {
-                    background-image: url(/imagenes/blurred-frutas.jpg);
+                    background-image: url(../../imagenes/blurred-frutas.jpg);
                 }
             }
 
             .personajes {
 
-                background-image: url(/imagenes/personajes.webp);
+                background-image: url(../../imagenes/personajes.webp);
                 padding: 70px 0px;
                 border-width: 7px;
                 margin: 20px 70px;
                 grid-area: personajes;
 
                 &:hover {
-                    background-image: url(/imagenes/blurred-personajes.jpg);
+                    background-image: url(../../imagenes/blurred-personajes.jpg);
                     font-size: 42px;
                 }
             }
