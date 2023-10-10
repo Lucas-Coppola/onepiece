@@ -103,12 +103,13 @@
     }
 
     .portadaMedia {
-        background-size: 70rem 111.5rem;
+        background-size: 70rem 120.5rem;
         text-align: center;
         height: unset;
+        border-bottom: black solid 2px;
 
         .media {
-            font-size: 11rem;
+            font-size: 10rem;
         }
 
         .descripcionMedia {
@@ -136,8 +137,8 @@
         }
 
         .imgsCarrusel {
-            width: 26rem !important;
-            height: 20rem !important;
+            width: 22rem !important;
+            height: 18rem !important;
             margin-left: 10px !important;
             padding: -5px !important;
         }
