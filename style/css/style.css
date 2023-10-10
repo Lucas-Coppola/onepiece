@@ -849,16 +849,16 @@ aside .Aside #volumenNuevo img {
     margin-bottom: 30px;
   }
   .mainMedia .videosMedia .iframeMedia {
-    width: 380px;
+    width: 350px;
   }
   .mainMedia .videosMedia .spotifyMedia {
     width: 350px;
     height: 600px;
   }
   .mainMedia .imgsCarrusel {
-    width: 22rem !important;
+    width: 23rem !important;
     height: 18rem !important;
-    margin-left: 10px !important;
+    margin-left: 25px !important;
     padding: -5px !important;
   }
   #subidadivMedia {
@@ -997,8 +997,7 @@ aside .Aside #volumenNuevo img {
     align-items: center;
   }
   .mainNakama .content .contact-form {
-    width: 23rem !important;
-    margin-left: 15px;
+    width: 22rem !important;
   }
   .mainNakama .content .contact-info {
     margin-right: 0px;
@@ -1087,7 +1086,7 @@ footer .copyright {
 
 /* Footer Tripulaciones */
 .footerTrip {
-  height: 70vh;
+  height: 80vh;
 }
 .footerTrip .logoTrips {
   height: 80px;
