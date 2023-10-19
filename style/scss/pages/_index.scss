@@ -6,7 +6,7 @@ body {
         "footer  footer  footer"
     ;
     grid-template-columns: 150px 3fr 0.5fr;
-    grid-template-rows: 150px 1fr 150px;
+    grid-template-rows: 150px 1fr 400px;
 }
 
 .infoGrid {
@@ -14,21 +14,25 @@ body {
     grid-area: info;
 
     .infoPortada {
-        font-family: 'Caesar Dressing', cursive;
         text-align: center;
-        height: 60vh;
+        margin-bottom: 7rem;
 
         .tituloPrincipal {
             font-size: 4rem;
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 2rem;
+            font-family: $FuenteInfo;
         }
 
         a {
             color: burlywood;
             text-decoration: none;
+
+            &:hover {
+                color: rgb(223, 174, 111);
+            }
         }
     }
 
@@ -41,11 +45,13 @@ body {
 
         h2 {
             padding-right: 10px;
+            font-size: 3rem;
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             padding-right: 10px;
+            font-family: $FuenteInfo;
         }
 
         .imagenMain {
@@ -55,7 +61,6 @@ body {
 
             .liveAction {
                 @include radius(10px);
-                padding: 0px 0px 10px;
                 width: 300px;
             }
         }
@@ -70,11 +75,13 @@ body {
 
         h2 {
             padding-left: 10px;
+            font-size: 3rem;
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             padding-left: 10px;
+            font-family: $FuenteInfo;
         }
 
         .filmRed {
@@ -90,7 +97,8 @@ body {
     }
 
     .Mundoinfo {
-
+        @include flex (column);
+        align-items: center;
         text-align: right;
         box-shadow: $BoxShadow;
         @include radius(10px);
@@ -103,9 +111,15 @@ body {
         }
 
         .mundoInfo {
-            @include flex(row);
-            flex-wrap: wrap;
-            margin-left: 80px;
+            display: grid !important;
+            grid-template-areas:
+                "arcos  manga "
+                "anime  yonkou "
+                "frutas personajes "
+            ;
+            grid-template-columns: 110px 300px;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 0px 200px;
 
             a {
                 color: black;
@@ -208,92 +222,200 @@ body {
 }
 
 aside {
-
     background-color: $BackgroundColor;
     grid-area: aside;
 
     .Aside {
-
         box-shadow: $BoxShadow;
         margin: 10px;
         @include radius(10px);
+        font-size: 1.1rem;
 
         h2 {
             margin: 0px 10px;
         }
 
-        .botoncito {
-            color: rgb(79, 79, 245);
-            list-style-type: none;
-            text-decoration: none;
-            margin: 0px 10px;
-
-            &:hover {
-
-                color: rgb(144, 144, 245);
-
-            }
-        }
-
         #gearFive {
-
             text-align: left;
             box-shadow: $BoxShadow;
             margin: 20px;
             @include radius(10px);
+
+            h3 {
+                margin-left: 10px;
+            }
+
+            p {
+                margin-left: 10px;
+                font-family: $FuenteInfo;
+                font-size: 1.3rem;
+            }
 
             img {
                 margin: 0px 10px 10px;
                 @include radius(10px);
                 width: 300px;
             }
+
+            .botoncito {
+                color: black;
+                list-style-type: none;
+                text-decoration: none;
+                margin: 10px 10px;
+                background-color: burlywood;
+                border-radius: 30px;
+                font-size: 1rem;
+                padding: 5px;
+    
+                &:hover {
+                    background-color: rgb(221, 174, 112);
+                }
+            }
         }
 
         #volumenNuevo {
             text-align: left;
             box-shadow: $BoxShadow;
-            margin: 20px 20px 20px;
+            margin: 20px 20px;
             @include radius(10px);
+
+            h3 {
+                margin-left: 10px;
+            }
+
+            p {
+                margin-left: 10px;
+                font-family: $FuenteInfo;
+                font-size: 1.3rem;
+            }
 
             img {
                 margin: 0px 10px 10px;
                 width: 250px;
                 @include radius(10px);
             }
+
+            .botoncito {
+                color: black;
+                list-style-type: none;
+                text-decoration: none;
+                margin: 50px 10px;
+                background-color: burlywood;
+                border-radius: 30px;
+                font-size: 1rem;
+                padding: 5px;
+    
+                &:hover {
+                    background-color: rgb(221, 174, 112);
+                }
+            }
         }
     }
 }
 
-.subidaDiv {
-    position: sticky;
-    margin-right: 100px;
-    bottom: 25px;
+/* Adaptación 4k */
+@media screen and (min-width: 1501px) {
+    .infoPortada {
+        .tituloPrincipal {
+            font-size: 8rem !important;
+        }
 
-    .imgSubida {
-        text-align: center;
-        display: inline-block;
-        height: 70px;
-        width: 70px;
-        margin: -250px -20px 5px 5px;
-        z-index: 1;
+        p {
+            font-size: 3rem !important;
+        }
+    }
+
+    .infoIndex {
+        .mainInfo {
+            article {
+                h2 {
+                    font-size: 6rem;
+                }
+
+                p {
+                    font-size: 2.5rem;
+                    padding-left: 15rem !important;
+                }
+            }
+
+            .imagenMain {
+                .liveAction {
+                    width: 35rem !important;
+                }
+            }
+        }
+
+        .maiNinfo {
+            article {
+                h2 {
+                    font-size: 6rem;
+                }
+
+                p {
+                    font-size: 2.5rem;
+                    padding-right: 15rem !important;
+                }
+            }
+
+            .filmRed {
+                .Imagenmain {
+                    width: 40rem !important;
+                    margin-right: 1rem;
+                    margin-top: 2rem;
+                }
+            }
+        }
+
+        .Mundoinfo {
+            h2 {
+                font-size: 6rem;
+            }
+
+            .mundoInfo {
+                grid-template-columns: 250px 500px;
+
+                #fondosDiv {
+                    width: 400px !important;
+                    height: 400px !important;
+                    background-size: 400px 400px !important;
+                    font-size: 6.5rem !important;
+                }
+            }
+        }
+    }
+
+    aside {
+        .Aside {
+            section {
+                h2 {
+                    font-size: 5rem !important;
+                }
+
+                h3 {
+                    font-size: 4rem;
+                }
+
+                p {
+                    font-size: 2.5rem;
+
+                    img {
+                        width: 40rem !important;
+                        margin: 1rem !important;
+                    }
+                }
+
+                .botoncito {
+                    font-size: 2.5rem !important;
+                }
+            }
+        }
     }
 }
 
-/* Adaptacion a Mobile */
-@media screen and (max-width: 480px) {
+/* Adaptación Tablet */
+@media screen and (min-width: 680px) and (max-width: 990px) {
     body {
-        grid-template-areas:
-            "header "
-            "info "
-            "aside "
-            "footer"
-        ;
-        grid-template-columns: 1fr;
-        grid-template-rows: 120px 1fr auto 70px;
-    }
-
-    .logoIndex {
-        width: 250px;
+        display: unset;
     }
 
     #navDesk {
@@ -307,11 +429,12 @@ aside {
             font-size: 2rem;
         }
 
-        #togglerIndex {
+        #togglerGrand {
             border: #0e0e0e solid 3px;
             @include radius(30px);
+            margin-left: -5rem;
 
-            #togglerIconindex {
+            #togglerIcongrand {
                 width: 50px;
                 height: 60px;
             }
@@ -322,38 +445,38 @@ aside {
         }
     }
 
+    .logoMobile {
+        width: 15rem;
+        margin-bottom: -30px;
+    }
+
     .infoPortada {
-        margin-bottom: -300px !important;
+        margin-bottom: 1rem !important;
 
-        .tituloPrincipal {
-            font-size: 4rem !important;
-        }
-
-        p {
-            font-size: 2rem;
+        h2 {
+            font-size: 5rem !important;
         }
     }
 
     .infoIndex {
-        margin-top: 650px;
-
         h2 {
             text-align: center !important;
-            font-size: 3rem;
+            font-size: 4rem;
         }
 
         .mainInfo {
             flex-direction: column-reverse !important;
             text-align: center !important;
             align-items: center !important;
-            
+
             p {
                 font-size: 1.5rem;
                 padding: 10px;
 
                 .liveAction {
-                    width: 350px !important;
-                    margin-left: -35px !important;
+                    width: 40rem !important;
+                    @include radius(20px !important);
+                    margin-left: -11rem;
                 }
             }
         }
@@ -368,14 +491,18 @@ aside {
                 padding: 10px;
 
                 .Imagenmain {
-                    width: 335px !important;
+                    width: 40rem !important;
                 }
             }
         }
 
         .Mundoinfo {
+            @include flex (column);
+            align-items: center;
+            
             h2 {
-                text-align: left !important;
+                text-align: center !important;
+                font-size: 4rem;
             }
 
             .mundoInfo {
@@ -385,18 +512,19 @@ aside {
                     "anime  yonkou "
                     "frutas personajes "
                 ;
-                grid-template-columns: 110px 110px;
+                grid-template-columns: 110px 250px;
                 grid-template-rows: 1fr 1fr 1fr;
-                gap: 0px 30px;
-                margin-left: -20px !important;
+                gap: 0px 250px;
+                overflow-x: hidden;
 
                 #fondosDiv {
-                    width: 130px !important;
-                    height: 130px !important;
-                    background-size: 130px 130px !important;
-                    margin-left: 40px !important;
-                    font-size: 30px !important;
-                    padding-top: 50px !important;
+                    @include flex (column);
+                    align-items: center;
+                    width: 250px !important;
+                    height: 250px !important;
+                    background-size: 250px 250px !important;
+                    font-size: 3rem !important;
+                    margin-left: 0rem !important;
                 }
             }
         }
@@ -406,20 +534,250 @@ aside {
         display: none;
     }
 
-    .carrusel {
-        width: 400px;
-        margin-left: 0.5rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+    aside {
+        @include flex (column);
+        align-items: center;
+        margin-bottom: -9rem;
+        margin-top: -5rem;
 
-        img {
-            width: 400px !important;
-            @include radius(20px);
+        .carrusel {
+            width: 40rem;
+            padding-top: 6rem;
+            padding-bottom: 8rem;
+
+            img {
+                width: 40rem;
+                @include radius (30px)
+            }
+
+            .carruselImage {
+                width: 40rem;
+                @include radius (30px)
+            }
+        }
+    }
+
+    .subidaDiv {
+        position: sticky;
+        margin-right: 100px;
+        bottom: 25px;
+
+        .imgSubida {
+            display: inline-block;
+            height: 80px;
+            width: 80px;
+            margin: 0px -20px 5px 5px;
+            z-index: 1;
+        }
+    }
+}
+
+/* Adaptacion a Mobile */
+@media screen and (max-width: 679px) {
+    body {
+        display: unset;
+        overflow-x: hidden;
+    }
+
+    .logoIndex {
+        width: 16rem;
+    }
+
+    #navDesk {
+        display: none;
+    }
+
+    #navMobile {
+        margin-bottom: 15px;
+
+        a {
+            font-size: 2rem;
         }
 
-        .carruselImage {
-            width: 400px !important;
-            @include radius(20px);
+        #togglerGrand {
+            border: #0e0e0e solid 3px;
+            @include radius(30px);
+            margin-left: -5rem;
+
+            #togglerIcongrand {
+                width: 50px;
+                height: 60px;
+            }
+        }
+
+        .logoMobile {
+            width: 200px;
+        }
+    }
+
+    .infoPortada {
+        margin-bottom: 0rem !important;
+
+        .tituloPrincipal {
+            font-size: 4rem !important;
+        }
+
+        p {
+            font-size: 1.5rem !important;
+        }
+    }
+
+    .infoIndex {
+        h2 {
+            text-align: center !important;
+            font-size: 3rem;
+        }
+
+        .mainInfo {
+            flex-direction: column-reverse !important;
+            text-align: center !important;
+            align-items: center !important;
+
+            p {
+                font-size: 1.5rem;
+                padding: 10px;
+
+                .liveAction {
+                    width: 18rem !important;
+                    @include radius(20px !important);
+                }
+            }
+        }
+
+        .maiNinfo {
+            flex-direction: column-reverse !important;
+            text-align: center !important;
+            align-items: center !important;
+
+            p {
+                font-size: 1.5rem;
+                padding: 10px;
+
+                .Imagenmain {
+                    width: 18rem !important;
+                }
+            }
+        }
+
+        .Mundoinfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                text-align: center !important;
+            }
+
+            .mundoInfo {
+                display: grid !important;
+                grid-template-areas:
+                    "arcos  manga "
+                    "anime  yonkou "
+                    "frutas personajes "
+                ;
+                grid-template-columns: 110px 200px;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 0px 30px;
+                margin-left: -50px !important;
+                overflow-x: hidden;
+
+                #fondosDiv {
+                    @include flex (column);
+                    align-items: center;
+                    width: 130px !important;
+                    height: 130px !important;
+                    background-size: 130px 130px !important;
+                    font-size: 30px !important;
+                    padding-top: 50px !important;
+                }
+            }
+        }
+    }
+
+    .subidaDiv {
+        position: sticky;
+        margin-right: 100px;
+        bottom: 25px;
+
+        .imgSubida {
+            display: inline-block;
+            height: 60px;
+            width: 60px;
+            margin: 0px -20px 5px 5px;
+            z-index: 1;
+        }
+    }
+
+    .Aside {
+        display: none;
+    }
+
+    aside {
+        margin-bottom: -9rem;
+        margin-top: -5rem;
+        @include flex (column);
+        align-items: center;
+
+        .carrusel {
+            width: 20rem;
+            padding-top: 6rem;
+            padding-bottom: 9.5rem;
+
+            img {
+                width: 20rem !important;
+                @include radius(20px);
+            }
+
+            .carruselImage {
+                width: 20rem !important;
+                @include radius(20px);
+            }
+        }
+    }
+}
+
+/* Adaptación Mobile S */
+@media screen and (max-width: 320px) {
+
+    .logoIndex {
+        width: 13rem;
+    }
+
+    .infoIndex {
+        .mainInfo {
+            p {
+                .liveAction {
+                    width: 15rem !important;
+                    margin-left: 1.2rem;
+                }
+            }
+        }
+
+        .maiNinfo {
+            p {
+                .Imagenmain {
+                    width: 15rem !important;
+                }
+            }
+        }
+    }
+
+    #fondosDiv {
+        margin-left: 4rem !important;
+    }
+
+
+    aside {
+        .carrusel {
+            width: 18rem !important;
+
+            img {
+                width: 18rem !important;
+            }
+
+            .carruselImage {
+                width: 18rem !important;
+            }
         }
     }
 }

@@ -1,6 +1,7 @@
 header {
-    font-family: 'Caesar Dressing', cursive;
+    font-family: $FuentePrincipal;
     background-image: url(../../imagenes/fondo-cover.jpg);
+    background-position: bottom;
     grid-area: header;
     display: flex;
     justify-content: space-between;
@@ -12,9 +13,9 @@ header {
     }
 
     li {
-        font-family: 'Caesar Dressing', cursive;
+        font-family: $FuentePrincipal;
         margin: 20px;
-        font-size: 22px;
+        font-size: 25px;
         font-weight: 590;
 
         a:hover {

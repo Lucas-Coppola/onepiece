@@ -7,20 +7,21 @@
         " footer footer footer "
     ;
     grid-template-columns: 150px 3fr 1fr;
-    grid-template-rows: 150px 0.3fr 2.5fr 150px;
+    grid-template-rows: 150px 0.3fr 2.5fr 300px;
+    overflow-x: hidden;
 }
 
 .portadaGrand {
     grid-area: portada;
     background-image: url(../../imagenes/grand-line-fondo.jpg);
     background-position: center;
-    background-size: 92rem 49rem;
+    background-size: 97rem 55rem;
     background-repeat: no-repeat;
     font-weight: bolder;
     color: rgb(255, 255, 255);
     text-align: center;
     padding-left: 10px;
-    height: 108vh;
+    height: unset;
     border-bottom: black solid 2px;
 
     .grandLine {
@@ -46,6 +47,7 @@
             font-weight: bold;
             font-size: 2rem;
             opacity: 0.6;
+            margin-bottom: 5rem;
 
             &:hover {
                 opacity: 1;
@@ -62,10 +64,13 @@
 
         .tituloGrand {
             font-size: 5rem;
+            margin-left: 10px;
         }
 
         .Infoline {
             font-size: 2rem;
+            font-family: $FuenteInfo;
+            margin-left: 10px;
         }
 
         .grandImagen {
@@ -79,6 +84,7 @@
                 @include flex(row);
 
                 .trpulantesNuevos {
+                    margin-top: 20px;
                     margin-left: 0px;
                     margin-right: 27px;
                     margin-bottom: 20px;
@@ -99,18 +105,199 @@
     border-bottom: 0px;
 }
 
-/* Grand Line Mobile */
-@media screen and (max-width: 480px) {
+/* Adaptación 4K */
+@media screen and (min-width: 1560px) and (max-width: 2560px) {
+    .portadaGrand {
+        background-size: 160rem 74rem;
+
+        .grandLine {
+            font-size: 17rem;
+        }
+    
+        .descripcionGrand {
+            font-size: 4rem;
+        }
+    
+        .tituloBelt {
+            font-size: 5rem;
+        }
+    
+        #navbarGrand {
+            #navGrand {
+                font-size: 4rem;
+                margin-bottom: 8rem;
+            }
+        }
+    }
+    
+    .grandLinevh {
+        .grandlineInfo {
+            .tituloGrand {
+                font-size: 9rem;
+            }
+    
+            .Infoline {
+                font-size: 4rem;
+            }
+    
+            .grandImagen {
+                .imgsTripulantes {
+                    .trpulantesNuevos {
+                        margin-top: 20px;
+                        width: 505px;
+                        height: 400px;
+                    }
+                }
+    
+                .grandImages {
+                    width: 65rem;
+                    height: 34rem;
+                }
+            }
+        }
+    }
+    
+    #marineford {
+        border-bottom: 0px;
+    }    
+}
+
+/* Adaptación Tablet */
+@media screen and (min-width: 641px) and (max-width: 1075px) {
     .bodyGrand {
-        display: grid;
-        grid-template-areas:
-            " header "
-            " portada "
-            " main "
-            " footer "
-        ;
-        grid-template-columns: 1fr;
-        grid-template-rows: 150px 0.8fr 2.5fr 150px;
+        display: unset;
+    }
+
+    header {
+        #logoGrand {
+            width: 17rem;
+        }
+
+        #navgrandLine {
+            margin-bottom: 10px;
+
+            a {
+                font-size: 2rem;
+            }
+
+            #togglerGrand {
+                border: #0e0e0e solid 3px;
+                @include radius(30px);
+
+                #togglerIcongrand {
+                    width: 50px;
+                    height: 60px;
+                }
+            }
+
+            #mobileLogoGrand {
+                width: 200px;
+            }
+        }
+
+    }
+
+    .portadaGrand {
+        height: unset;
+        background-size: 70rem 189rem;
+
+        .grandLine {
+            font-size: 7rem !important;
+        }
+
+        .descripcionGrand {
+            font-size: 1.7rem !important;
+        }
+
+        .tituloBelt {
+            font-size: 3rem;
+        }
+
+        #navbarGrand {
+            flex-direction: column !important;
+
+            #navGrand {
+                font-size: 2.3rem !important;
+                margin: 10px;
+            }
+        }
+    }
+
+    .mainGrid {
+        margin-bottom: -15rem;
+
+        #marineFord {
+            border-bottom: 0px;
+
+            #marineford {
+                margin-bottom: 15rem;
+                border-bottom: none;
+            }
+        }
+
+        .grandLinevh {
+            .grandlineInfo {
+                @include flex(column-reverse);
+
+                .tituloGrand {
+                    font-size: 5rem !important;
+                    text-align: center;
+                }
+
+                .Infoline {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+            }
+        }
+
+        #infoInvert {
+            @include flex(column);
+        }
+
+        .grandImagen {
+            @include flex(column);
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px !important;
+
+            .imgsTripulantes {
+                @include flex(row);
+                margin-top: 10px;
+                width: 200px;
+                height: 200px;
+
+                .trpulantesNuevos {
+                    display: none;
+                }
+            }
+
+            .grandImages {
+                width: 40rem !important;
+                height: 20rem !important;
+                margin-top: -160px;
+                margin-bottom: -30px;
+            }
+        }
+    }
+
+    #subidadivGrand {
+        margin-left: 10px;
+        margin-top: -4.5rem;
+        bottom: 2rem;
+
+        #imgsubidaGrand {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
+
+/* Grand Line Mobile */
+@media screen and (max-width: 640px) {
+    .bodyGrand {
+        display: unset;
+        overflow-x: hidden;
     }
 
     header {
@@ -143,91 +330,141 @@
     }
 
     .portadaGrand {
-        height: unset;
         background-size: 70rem 189rem;
+        height: 290vh;
 
         .grandLine {
-            font-size: 8.5rem !important;
+            font-size: 7rem !important;
         }
 
         .descripcionGrand {
-            font-size: 2.7rem !important;
+            font-size: 1.7rem !important;
         }
 
         .tituloBelt {
 
-            font-size: 3.7rem;
+            font-size: 3rem;
         }
 
         #navbarGrand {
             flex-direction: column !important;
 
             #navGrand {
-                font-size: 3rem !important;
+                margin: 10px;
             }
         }
     }
 
-    .grandLinevh {
-        margin-bottom: 50px;
+    .mainGrid {
+        margin-bottom: -5rem;
 
-        .grandlineInfo {
-            margin-top: -250px;
-            @include flex(column-reverse);
+        .grandLinevh {
+            .grandlineInfo {
+                @include flex(column-reverse);
 
-            .tituloGrand {
-                font-size: 5rem !important;
-                text-align: center;
-            }
+                .tituloGrand {
+                    font-size: 4rem !important;
+                    text-align: center;
+                }
 
-            .Infoline {
-                font-size: 2rem;
-                text-align: center;
-            }
-        }
-    }
-
-    #infoInvert {
-        @include flex(column);
-    }
-
-    #calmImage {
-        margin-top: 50px;
-    }
-
-    .grandImagen {
-        @include flex(column);
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 40px !important;
-
-        .imgsTripulantes {
-            @include flex(row);
-            margin-top: 10px;
-            width: 200px;
-            height: 200px;
-
-            .trpulantesNuevos {
-                display: none;
+                .Infoline {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
             }
         }
 
-        .grandImages {
-            width: 24rem !important;
-            height: 15rem !important;
-            margin-top: 10px;
-            margin-bottom: -30px;
+        #infoInvert {
+            @include flex(column);
+        }
+
+        #calmImage {
+            margin-top: 0px;
+        }
+
+        .grandImagen {
+            @include flex(column);
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px !important;
+
+            .imgsTripulantes {
+                @include flex(row);
+                margin-top: 10px;
+                width: 200px;
+                height: 200px;
+
+                .trpulantesNuevos {
+                    display: none;
+                }
+            }
+
+            .grandImages {
+                width: 23rem !important;
+                height: 15rem !important;
+                margin-top: -160px;
+                margin-bottom: -30px;
+            }
         }
     }
 
     #subidadivGrand {
         margin-left: 10px;
         margin-top: -4.5rem;
-        bottom: -15rem;
+        bottom: 2rem;
 
         #imgsubidaGrand {
             width: 70px;
             height: 70px;
+        }
+    }
+}
+
+/* Grand Line Mobile S */
+@media screen and (max-width: 375px) {
+    .bodyGrand {
+        display: unset;
+        overflow-x: hidden;
+    }
+
+    header {
+        #navgrandLine {
+            margin-left: -3rem;
+            margin-top: 1rem;
+        }
+
+        #logoGrand {
+            width: 13rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .portadaGrand {
+        height: 320vh;
+
+        .grandLine {
+            font-size: 6rem !important;
+        }
+    }
+
+    .mainGrid {
+        .grandLinevh {
+            .grandlineInfo {
+                .tituloGrand {
+                    font-size: 3rem !important;
+                }
+
+                .Infoline {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .grandImagen {
+            .grandImages {
+                width: 18rem !important;
+                height: 12rem !important;
+            }
         }
     }
 }

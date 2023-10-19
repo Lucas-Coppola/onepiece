@@ -25,9 +25,13 @@
 /* Se Un Nakama */
 @import "./pages/se-un-nakama.scss";
 
+/* Error 404 */
+@import "./pages/error404";
+
 /* Footer Universal */
 @import "./layout/footer.scss";
 
+/* Displays Nones Generales */
 @media screen and (min-width: 991px) {
     .carrusel {
         display: none;
@@ -59,4 +63,3 @@
 
     }
 }
-

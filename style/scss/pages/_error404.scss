@@ -1,0 +1,74 @@
+.bodyError {
+    background-color: $BackgroundColor;
+    display: flex;
+
+    .container-error404 {
+        @include flex(column);
+        align-items: center;
+        margin-left: 12rem;
+        margin-top: 1rem;
+        text-align: center;
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            opacity: 0.8;
+        }
+
+        .botonError-404 {
+            margin-top: 20px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                padding: 10px;
+                font-size: 1.5rem;
+                background-color: burlywood;
+                border-radius: 30px;
+
+                &:hover {
+                    background-color: rgb(231, 183, 120);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container-error404 {
+        margin-right: 10rem;
+        margin-top: 15rem !important;
+
+        img {
+            width: 600px;
+        }
+
+        h1 {
+            font-size: 5rem !important;
+            width: 150%;
+            margin-left: -10rem;
+        }
+
+        p {
+            font-size: 3rem !important;
+            width: 150%;
+            margin-left: -10rem;
+            opacity: 0.8;
+        }
+
+        .botonError-404 {
+            width: 150%;
+            margin-top: 50px !important;
+
+            a {
+                font-size: 3.8rem !important;
+                padding: 20px !important;
+                border-radius: 50px !important;
+                color: white;
+            }
+        }
+    }
+}
