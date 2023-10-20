@@ -13,7 +13,7 @@
 
 .portada {
     grid-area: portada;
-    background-image: url(../../imagenes/one-piece-tripulaciones-fondo.jpg);
+    background-image: url(../../imagenes/portada_oscura_trips.jpg);
     background-position: center;
     background-size: 1500px 870px;
     background-repeat: no-repeat;
@@ -36,6 +36,10 @@
 .mainGrid {
     grid-area: main;
     background-color: $BackgroundColor;
+
+    #vhBigmomyluffy {
+        height: 100vh;
+    }
 
     .tripulacionVh {
         height: 94vh;
@@ -76,7 +80,8 @@
         }
 
         .infoTripul {
-            font-size: 1.1rem;
+            font-size: 1.5rem;
+            font-family: $FuenteInfo;
         }
 
         #parrafoAparte {
@@ -261,6 +266,10 @@
             height: unset;
         }
 
+        #kaidoBottom {
+            margin-bottom: 15rem;
+        }
+
         .tripulacionVh {
             height: unset;
             text-align: center;
@@ -339,7 +348,7 @@
     }
 
     .portada {
-        height: 130vh;
+        height: 135vh;
         background-size: 70rem 50rem;
         border-bottom: black solid 2px !important;
 
@@ -354,12 +363,18 @@
     }
 
     .mainGrid {
+        margin-bottom: -85px !important;
+
         #vhBigmomyluffy {
-            height: 190vh;
+            height: unset;
+        }
+
+        #kaidoBottom {
+            margin-bottom: 3rem;
         }
 
         .tripulacionVh {
-            height: 175vh;
+            height: unset;
             text-align: center;
             border: $BordePrincipal 10px;
             border-bottom: 0px;
@@ -470,11 +485,15 @@
 
     .mainGrid {
         #vhBigmomyluffy {
-            height: 190vh;
+            height: unset;
+        }
+
+        #kaidoBottom {
+            margin-bottom: 3rem;
         }
 
         .tripulacionVh {
-            height: 175vh;
+            height: unset;
             text-align: center;
             border: $BordePrincipal 10px;
             border-bottom: 0px;

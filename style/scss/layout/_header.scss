@@ -1,5 +1,4 @@
 header {
-    font-family: $FuentePrincipal;
     background-image: url(../../imagenes/fondo-cover.jpg);
     background-position: bottom;
     grid-area: header;
@@ -12,14 +11,15 @@ header {
         margin: 10px;
     }
 
-    li {
-        font-family: $FuentePrincipal;
-        margin: 20px;
-        font-size: 25px;
-        font-weight: 590;
+    ul {
+        li {
+            margin: 20px;
+            font-size: 25px;
+            font-weight: 590;
 
-        a:hover {
-            text-decoration: underline;
+            a:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
