@@ -296,7 +296,7 @@ aside .Aside #volumenNuevo .botoncito:hover {
 }
 
 /* Adaptación 4k */
-@media screen and (min-width: 1501px) {
+@media screen and (min-width: 1700px) {
   .infoPortada .tituloPrincipal {
     font-size: 8rem !important;
   }
@@ -743,7 +743,7 @@ aside .Aside #volumenNuevo .botoncito:hover {
 }
 
 /* Tripulaciones 4K */
-@media screen and (min-width: 1518px) and (max-width: 2655px) {
+@media screen and (min-width: 1700px) and (max-width: 2700px) {
   .portada {
     background-size: 2700px 1550px !important;
   }
@@ -801,12 +801,18 @@ aside .Aside #volumenNuevo .botoncito:hover {
   }
 }
 /* Tripulaciones Laptop L */
-@media screen and (min-width: 1440px) and (max-width: 1517px) {
+@media screen and (min-width: 1440px) and (max-width: 1699px) {
+  .portada {
+    background-size: 97rem 80rem;
+  }
   .portada .trips {
     font-size: 8rem;
   }
   .portada .descripcionTrips {
     font-size: 3rem;
+  }
+  .asideTrip {
+    margin-top: -4.9rem;
   }
   .asideTrip .tripulacionesNav {
     position: sticky;
@@ -819,11 +825,28 @@ aside .Aside #volumenNuevo .botoncito:hover {
   .asideTrip .tripulacionesNav .asideLink {
     font-size: 2rem;
   }
-  .tripulacionesInfo .tripName {
+  .mainGrid {
+    margin-top: -4.9rem;
+  }
+  .mainGrid #vhBigmomyluffy {
+    height: 112vh !important;
+  }
+  .mainGrid .tripulacionVh {
+    height: 110vh !important;
+  }
+  .mainGrid .tripulacionVh .tripulacionesInfo .tripName {
     font-size: 6rem !important;
   }
-  .tripulacionesInfo .infoTripul {
-    font-size: 1.5rem !important;
+  .mainGrid .tripulacionVh .tripulacionesInfo .infoTripul {
+    font-size: 2rem !important;
+  }
+  .mainGrid .tripulacionVh .tripulacionesInfo .tripulacion-imagenes .mugiwara {
+    width: 50rem !important;
+    height: 25rem !important;
+  }
+  .mainGrid .tripulacionVh .tripulacionesInfo .tripulacion-imagenes .imgTrips .calavera {
+    width: 192px !important;
+    height: 192px !important;
   }
 }
 /* Tripulaciones Tablet */
@@ -1137,9 +1160,9 @@ aside .Aside #volumenNuevo .botoncito:hover {
 }
 
 /* Adaptación 4K */
-@media screen and (min-width: 1560px) and (max-width: 2560px) {
+@media screen and (min-width: 1536px) and (max-width: 2700px) {
   .portadaGrand {
-    background-size: 160rem 74rem;
+    background-size: 170rem 74rem;
   }
   .portadaGrand .grandLine {
     font-size: 17rem;
@@ -1550,7 +1573,7 @@ aside .Aside #volumenNuevo .botoncito:hover {
   }
 }
 /* Media Laptop L */
-@media screen and (min-width: 1400px) and (max-width: 1535px) {
+@media screen and (min-width: 1400px) and (max-width: 2483px) {
   .portadaMedia {
     background-size: 1650px 927px;
     height: unset;
@@ -1871,7 +1894,7 @@ aside .Aside #volumenNuevo .botoncito:hover {
   }
 }
 /* Se un Nakama Tablet */
-@media screen and (min-width: 641px) and (max-width: 1075px) {
+@media screen and (min-width: 641px) and (max-width: 1328px) {
   .bodyNakama {
     display: unset;
   }

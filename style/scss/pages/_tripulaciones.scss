@@ -117,117 +117,144 @@
 }
 
 /* Tripulaciones 4K */
-@media screen and (min-width: 1518px) and (max-width: 2655px) {
+@media screen and (min-width: 1700px) and (max-width: 2700px) {
     .portada {
         background-size: 2700px 1550px !important;
 
         .trips {
             font-size: 15rem;
         }
-    
+
         .descripcionTrips {
             font-size: 4.5rem;
         }
     }
 
-    
-.asideTrip {
-    margin-top: -6.8rem;
 
-    .tripulacionesNav {
-        position: sticky;
-        top: 20px;
-        margin-top: 20px;
-        margin-bottom: 80px !important;
-        margin-left: 20px;
-        padding-bottom: 50px;
+    .asideTrip {
+        margin-top: -6.8rem;
 
-        .asideLink {
-            font-size: 3.7rem;
+        .tripulacionesNav {
+            position: sticky;
+            top: 20px;
+            margin-top: 20px;
+            margin-bottom: 80px !important;
+            margin-left: 20px;
+            padding-bottom: 50px;
+
+            .asideLink {
+                font-size: 3.7rem;
+            }
         }
     }
-}
 
-.mainGrid {
-    margin-top: -6.8rem;
+    .mainGrid {
+        margin-top: -6.8rem;
 
-    .tripulacionVh {
-        height: 110vh !important;
-    
-        .tripulacionesInfo {
-            .tripName {
-                font-size: 10rem !important;
-            }
-        
-            .infoTripul {
-                font-size: 3rem !important; 
-            }
-        
-            .tripulacion-imagenes {
-                @include flex(row);
-                align-items: flex-end;
-                margin-bottom: 20px;
-        
-                .mugiwara {
-                    width: 95rem !important;
-                    height: 45rem !important;
+        .tripulacionVh {
+            height: 110vh !important;
+
+            .tripulacionesInfo {
+                .tripName {
+                    font-size: 10rem !important;
                 }
-        
-                .imgTrips {
-                    @include flex(column);
-                    margin-left: 10px;
-        
-                    .calavera {
-                        width: 352px !important;
-                        height: 352px !important;
-                        margin-top: 15px;
+
+                .infoTripul {
+                    font-size: 3rem !important;
+                }
+
+                .tripulacion-imagenes {
+                    @include flex(row);
+                    align-items: flex-end;
+                    margin-bottom: 20px;
+
+                    .mugiwara {
+                        width: 95rem !important;
+                        height: 45rem !important;
+                    }
+
+                    .imgTrips {
+                        @include flex(column);
+                        margin-left: 10px;
+
+                        .calavera {
+                            width: 352px !important;
+                            height: 352px !important;
+                            margin-top: 15px;
+                        }
                     }
                 }
-            }    
+            }
         }
     }
-}
 
 }
 
 /* Tripulaciones Laptop L */
-@media screen and (min-width: 1440px) and (max-width: 1517px) {
+@media screen and (min-width: 1440px) and (max-width: 1699px) {
     .portada {
+        background-size: 97rem 80rem;
         .trips {
             font-size: 8rem;
         }
-    
+
         .descripcionTrips {
             font-size: 3rem;
         }
     }
-
     
-.asideTrip {
-    .tripulacionesNav {
-        position: sticky;
-        top: 20px;
-        margin-top: 20px;
-        margin-bottom: 60px;
-        margin-left: 20px;
-        padding-bottom: 30px;
+    .asideTrip {
+        margin-top: -4.9rem;
 
-        .asideLink {
-            font-size: 2rem;
+        .tripulacionesNav {
+            position: sticky;
+            top: 20px;
+            margin-top: 20px;
+            margin-bottom: 60px;
+            margin-left: 20px;
+            padding-bottom: 30px;
+
+            .asideLink {
+                font-size: 2rem;
+            }
         }
     }
-}
+    
+    .mainGrid {
+        margin-top: -4.9rem;
 
-.tripulacionesInfo {
-    .tripName {
-        font-size: 6rem !important;
+        #vhBigmomyluffy {
+            height: 112vh !important;
+        }
+    
+        .tripulacionVh {
+            height: 110vh !important;
+    
+            .tripulacionesInfo {
+                .tripName {
+                    font-size: 6rem !important;
+                }
+        
+                .infoTripul {
+                    font-size: 2rem !important;
+                }
+        
+                .tripulacion-imagenes {
+                    .mugiwara {
+                        width: 50rem !important;
+                        height: 25rem !important;
+                    }
+        
+                    .imgTrips {
+                        .calavera {
+                            width: 192px !important;
+                            height: 192px !important;
+                        }
+                    }
+                }
+            }
+        }  
     }
-
-    .infoTripul {
-        font-size: 1.5rem !important; 
-    }
-}
-
 }
 
 /* Tripulaciones Tablet */
