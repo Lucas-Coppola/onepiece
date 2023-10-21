@@ -1029,6 +1029,9 @@ aside .Aside #volumenNuevo .botoncito:hover {
     width: 13rem;
     margin-top: 1rem;
   }
+  .portada {
+    background-size: 70rem 63rem;
+  }
   .portada .trips {
     font-size: 3rem;
     font-weight: bold;
